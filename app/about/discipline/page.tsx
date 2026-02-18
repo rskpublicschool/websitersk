@@ -112,7 +112,7 @@ export default function DisciplinePage() {
                   </h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-1 ml-10">
                     <li>Students must attend school regularly and be punctual</li>
-                    <li>Minimum 75% attendance is mandatory as per CBSE norms</li>
+                    <li>Minimum 80% attendance is mandatory as per CBSE norms</li>
                     <li>Leave applications must be submitted in advance or immediately upon return</li>
                     <li>Habitual late-comers will face disciplinary action</li>
                   </ul>

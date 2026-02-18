@@ -62,7 +62,7 @@ export default function ResultsAnnouncementsPage() {
                       100% Pass Rate in Class XII Results
                     </h3>
                     <p className="text-gray-600 text-sm mb-3">
-                      RSK Public School achieves remarkable 100% pass percentage in CBSE Class XII examinations with 85% students scoring above 80%.
+                      RSK Public School achieves remarkable 100% pass percentage in CBSE Class XII examinations with 90% students scoring above 80%.
                     </p>
                     <Link href="#" className="text-green-600 font-medium text-sm hover:underline">
                       View Results →

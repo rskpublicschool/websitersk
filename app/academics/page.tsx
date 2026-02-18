@@ -11,8 +11,8 @@ export default function StudentsPage() {
         {/* Hero Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/students-hero-rsk.jpg" 
-            alt="Happy RSK Students"
+            src="/activitiesandevent/rsk public school dehri annuals day celebration.jpg" 
+            alt="RSK students showcasing talents in annual day celebration"
             className="w-full h-full object-cover"
           />
           {/* Enhanced gradient overlay */}
@@ -62,7 +62,7 @@ export default function StudentsPage() {
                 <div className="text-sm text-slate-300">Events Per Year</div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">1200+</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">2500+</div>
                 <div className="text-sm text-slate-300">Happy Students</div>
               </div>
             </div>
@@ -89,8 +89,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-annual-day.jpg" 
-                    alt="Students performing in annual day celebration"
+                    src="/activitiesandevent/rsk public school dehri annuals day celebration.jpg" 
+                    alt="Students performing in annual day celebration at RSK Public School"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -112,8 +112,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-science-fair.jpg" 
-                    alt="Students presenting projects at science fair"
+                    src="/activitiesandevent/rsk public school dehri science fair innovation.jpg" 
+                    alt="Students presenting innovative projects at RSK science fair"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -135,8 +135,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-republic-day.jpg" 
-                    alt="Students celebrating Republic Day with flag hoisting"
+                    src="/schoolimages/rsk public school dehri kids parate 26th jan.jpeg" 
+                    alt="RSK students celebrating Republic Day with patriotic parade"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -158,8 +158,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-independence-day.jpg" 
-                    alt="Students celebrating Independence Day"
+                    src="/schoolimages/rsk public school dehri students stunt formations activities  (1).jpeg" 
+                    alt="RSK students celebrating Independence Day with group formations"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -181,8 +181,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-saraswati-pooja.jpg" 
-                    alt="Students celebrating Saraswati Pooja"
+                    src="/activitiesandevent/rsk public school dehri saraswati pooja celebration.jpg" 
+                    alt="Students celebrating Saraswati Pooja at RSK Public School"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -204,8 +204,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-sports-day.jpg" 
-                    alt="Students participating in sports day events"
+                    src="/activitiesandevent/rsk public school dehri sports day celebration.jpg" 
+                    alt="Students participating in sports day events at RSK"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -227,8 +227,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-ncc.jpg" 
-                    alt="Students in NCC training and parade"
+                    src="/schoolimages/rsk public school dehri students NCC cadet march.jpeg" 
+                    alt="RSK students in NCC cadet training and march"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -250,8 +250,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-horse-riding.jpg" 
-                    alt="Students learning horse riding"
+                    src="/activitiesandevent/rsk public school dehri horse riding.jpg" 
+                    alt="RSK students learning horse riding with professional trainers"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -273,8 +273,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-bal-mela.jpg" 
-                    alt="Students enjoying Bal Mela activities"
+                    src="/schoolimages/rsk public school dehri food stall students bal mela (1).jpeg" 
+                    alt="RSK students enjoying fun-filled Bal Mela activities and food stalls"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -296,8 +296,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-field-trips.jpg" 
-                    alt="Students on educational field trips"
+                    src="/activitiesandevent/rsk public school dehri educational trips students.jpg" 
+                    alt="RSK students enjoying educational field trips and learning adventures"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -308,9 +308,9 @@ export default function StudentsPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-800">Educational Field Trips</h3>
+                  <h3 className="text-lg font-bold mb-2 text-gray-800">Educational & Industry Exposure Trips</h3>
                   <p className="text-gray-600 text-sm">
-                    Explore museums, historical sites, and nature parks while learning outside the classroom in exciting adventures.
+                    Explore museums, historical sites, nature parks, and gain real-world industry exposure through visits to companies, factories, and professional establishments.
                   </p>
                 </div>
               </CardBody>
@@ -320,8 +320,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/students-competitions.jpg" 
-                    alt="Students participating in various competitions"
+                    src="/activitiesandevent/rsk public school dehri inter school competitions.jpg" 
+                    alt="RSK students excelling in inter-school competitions"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -354,13 +354,136 @@ export default function StudentsPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-800">AI Innovation Workshop</h3>
+                  <h3 className="text-lg font-bold mb-2 text-gray-800">Career Workshops & AI Innovation</h3>
                   <p className="text-gray-600 text-sm">
-                    Explore the future with hands-on AI workshops, machine learning projects, and cutting-edge technology training.
+                    Professional career guidance workshops, AI innovation sessions, machine learning projects, and cutting-edge technology training for future readiness.
                   </p>
                 </div>
               </CardBody>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Student Exhibitions & Project Demonstrations */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle centered subtitle="Witness our students' creativity, innovation, and academic excellence through their amazing projects">
+            Student Exhibitions & Projects
+          </SectionTitle>
+
+          {/* Project Demonstration Videos */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Student Project Demonstrations</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <video 
+                  className="w-full h-64 object-cover" 
+                  controls
+                >
+                  <source src="/schoolvideos/rsk public school dehri exhibition day student feedback and project demostration isro .mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="p-6">
+                  <h4 className="font-semibold text-gray-800 mb-2">ISRO Space Science Project</h4>
+                  <p className="text-sm text-gray-600">Students showcasing their innovative space science project with detailed explanations and demonstrations during exhibition day</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <video 
+                  className="w-full h-64 object-cover" 
+                  controls
+                >
+                  <source src="/schoolvideos/rsk public school dehri exhibition day student feedback and project demostration srk school model.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="p-6">
+                  <h4 className="font-semibold text-gray-800 mb-2">School Model Project</h4>
+                  <p className="text-sm text-gray-600">Creative school model demonstration showing architectural design skills and innovative thinking by our talented students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Exhibition Images Gallery */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Model Exhibition Gallery</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/schoolimages/rsk public school dehri food stall students model exhibition (1).jpeg" 
+                  alt="Students presenting creative models at science exhibition"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 mb-2">Science Models Exhibition</h4>
+                  <p className="text-sm text-gray-600">Creative scientific models demonstrating physics, chemistry, and biology concepts</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/schoolimages/rsk public school dehri food stall students model exhibition (3).jpeg" 
+                  alt="Innovative project displays by students"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 mb-2">Innovation Showcase</h4>
+                  <p className="text-sm text-gray-600">Students presenting innovative solutions and creative engineering projects</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/schoolimages/rsk public school dehri food stall students model exhibition (5).jpeg" 
+                  alt="Educational models and experiments display"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 mb-2">Educational Models</h4>
+                  <p className="text-sm text-gray-600">Hands-on learning through interactive educational models and experiments</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/schoolimages/rsk public school dehri food stall students model exhibition 1.jpeg" 
+                  alt="Student creativity in project exhibitions"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 mb-2">Creative Projects</h4>
+                  <p className="text-sm text-gray-600">Artistic and creative projects showcasing students' diverse talents and skills</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/schoolimages/rsk public school dehri food stall students model exhibition (6).jpeg" 
+                  alt="Technology and engineering projects"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 mb-2">Technology Projects</h4>
+                  <p className="text-sm text-gray-600">Advanced technology and engineering projects by our tech-savvy students</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="/schoolimages/rsk public school dehri food stall students model exhibition 11.jpeg" 
+                  alt="Interactive learning displays"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 mb-2">Interactive Learning</h4>
+                  <p className="text-sm text-gray-600">Interactive displays that make learning fun and engaging for all students</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -376,48 +499,45 @@ export default function StudentsPage() {
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Student Video Stories</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <div className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl overflow-hidden shadow-lg border border-purple-200">
+              <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-lg border border-orange-200">
                 <video 
                   className="w-full h-48 object-cover" 
-                  controls 
-                  poster="/student-testimonial-1-thumbnail.jpg"
+                  controls
                 >
-                  <source src="/student-testimonial-1.mp4" type="video/mp4" />
+                  <source src="/schoolvideos/rsk public school dehri karate student saying boy.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Aarav Sharma - Class 10</h4>
-                  <p className="text-sm text-gray-600">"My journey from shy to confident"</p>
+                  <h4 className="font-semibold text-gray-800">Karate Student - Body Mind Connection</h4>
+                  <p className="text-sm text-gray-600">"Hum khelte hain, seekhte hain, jeette hain!"</p>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-blue-100 to-cyan-100 rounded-xl overflow-hidden shadow-lg border border-blue-200">
+              <div className="bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl overflow-hidden shadow-lg border border-pink-200">
                 <video 
                   className="w-full h-48 object-cover" 
-                  controls 
-                  poster="/student-testimonial-2-thumbnail.jpg"
+                  controls
                 >
-                  <source src="/student-testimonial-2.mp4" type="video/mp4" />
+                  <source src="/schoolvideos/rsk public school dehri karate student saying girl.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Priya Gupta - Class 12</h4>
-                  <p className="text-sm text-gray-600">"How RSK shaped my dreams"</p>
+                  <h4 className="font-semibold text-gray-800">Karate Student Girl - Confidence</h4>
+                  <p className="text-sm text-gray-600">"Discipline and strength through martial arts"</p>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl overflow-hidden shadow-lg border border-green-200">
+              <div className="bg-gradient-to-br from-purple-100 to-violet-100 rounded-xl overflow-hidden shadow-lg border border-purple-200">
                 <video 
                   className="w-full h-48 object-cover" 
-                  controls 
-                  poster="/student-testimonial-3-thumbnail.jpg"
+                  controls
                 >
-                  <source src="/student-testimonial-3.mp4" type="video/mp4" />
+                  <source src="/schoolvideos/rsk public school dehri karate student saying girl 2.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Arjun Singh - Class 9</h4>
-                  <p className="text-sm text-gray-600">"Best friends and amazing teachers"</p>
+                  <h4 className="font-semibold text-gray-800">Karate Student Girl 2 - Leadership</h4>
+                  <p className="text-sm text-gray-600">"Mind-body balance through martial arts training"</p>
                 </div>
               </div>
             </div>
@@ -554,7 +674,7 @@ export default function StudentsPage() {
                 </div>
                 <h3 className="text-lg font-bold mb-3">Music Club</h3>
                 <p className="text-sm text-slate-300">
-                  Learn instruments, sing in the choir, and perform in school concerts and events.
+                  Comprehensive music education with instruments, vocal training, choir participation, and regular performances in school concerts and cultural events.
                 </p>
               </CardBody>
             </Card>
@@ -610,7 +730,7 @@ export default function StudentsPage() {
                 </div>
                 <h3 className="text-lg font-bold mb-3">Sports Club</h3>
                 <p className="text-sm text-slate-300">
-                  Join various sports teams, train regularly, and compete in inter-school tournaments.
+                  Join various sports teams including swimming, cricket, football, badminton. Train regularly and compete in inter-school tournaments.
                 </p>
               </CardBody>
             </Card>

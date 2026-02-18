@@ -54,11 +54,11 @@ export default function OnlineTuitionPage() {
                 <div className="text-sm text-slate-300">Expert Teachers</div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">1000+</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">2500+</div>
                 <div className="text-sm text-slate-300">Students Enrolled</div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">95%</div>
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">100%</div>
                 <div className="text-sm text-slate-300">Success Rate</div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">

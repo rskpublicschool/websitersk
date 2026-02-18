@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import SectionTitle from '@/app/components/SectionTitle';
 import { Card, CardBody } from '@/app/components/Card';
 import Button from '@/app/components/Button';
@@ -22,12 +23,12 @@ export default function AboutPage() {
           <Card>
             <CardBody className="p-8 text-center">
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Established in 1991, R.S.K Public School has been a beacon of quality education in Buxar, Bihar. 
+                Established in 2007, R.S.K Public School has been a landmark of quality education in Dehri, Bihar. 
                 Affiliated with the Central Board of Secondary Education (CBSE), we are committed to nurturing 
                 young minds and shaping future leaders through holistic education.
               </p>
               <p className="text-gray-600">
-                Our journey of over three decades has been marked by academic excellence, innovative teaching 
+                Our journey of over two decades has been marked by academic excellence, innovative teaching 
                 methods, and a deep commitment to student development.
               </p>
             </CardBody>
@@ -36,11 +37,15 @@ export default function AboutPage() {
           {/* Leadership Cards */}
           <div className="grid md:grid-cols-3 gap-6">
             <Link href="/about/director">
-              <Card hover className="h-full cursor-pointer">
-                <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
+              <Card hover className="h-full cursor-pointer overflow-hidden">
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src="/director RSK top school in dehri rohtas.jpg"
+                    alt="Director - RSK Public School"
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                 </div>
                 <CardBody className="text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Director's Message</h3>
@@ -55,11 +60,15 @@ export default function AboutPage() {
             </Link>
 
             <Link href="/about/principal">
-              <Card hover className="h-full cursor-pointer">
-                <div className="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
+              <Card hover className="h-full cursor-pointer overflow-hidden">
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src="/Rsk public school principle sir.webp"
+                    alt="Mr. Raj Narayan Singh - Principal of RSK Public School"
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                 </div>
                 <CardBody className="text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Principal's Message</h3>
@@ -74,9 +83,9 @@ export default function AboutPage() {
             </Link>
 
             <Link href="/about/discipline">
-              <Card hover className="h-full cursor-pointer">
-                <div className="h-48 bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
-                  <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <Card hover className="h-full cursor-pointer overflow-hidden">
+                <div className="h-48 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+                  <svg className="w-20 h-20 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
@@ -92,6 +101,92 @@ export default function AboutPage() {
               </Card>
             </Link>
           </div>
+
+          {/* Leadership Videos */}
+          <Card>
+            <CardBody className="p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Leadership Messages</h3>
+              <p className="text-gray-600 text-center mb-8">
+                Hear directly from our leadership about our vision, values, and commitment to excellence
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg">
+                  <video 
+                    className="w-full h-64 object-cover" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="p-6">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-800">Director's Message</h4>
+                        <p className="text-sm text-gray-600">Vision for Educational Excellence</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm">
+                      Our Director shares insights about RSK's mission, educational philosophy, and future plans for student development.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl overflow-hidden shadow-lg">
+                  <video 
+                    className="w-full h-64 object-cover" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="p-6">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-800">Principal's Message</h4>
+                        <p className="text-sm text-gray-600">Academic Leadership & School Management</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm">
+                      Our Principal discusses academic excellence, teaching methodologies, and the comprehensive approach to student development at RSK.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardBody>
+          </Card>
+
+          {/* Management & Chief Guests */}
+          <Card>
+            <CardBody className="p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Distinguished Guests & Management</h3>
+              <div className="max-w-4xl mx-auto">
+                <img 
+                  src="/schoolimages/chief guests and management.jpeg" 
+                  alt="Chief Guests and Management at RSK Public School"
+                  className="w-full h-80 object-cover rounded-xl shadow-lg mb-6"
+                />
+                <div className="text-center">
+                  <h4 className="font-semibold text-gray-800 mb-2">Honored Guests & Leadership Team</h4>
+                  <p className="text-gray-600">
+                    RSK Public School regularly welcomes distinguished guests, educational leaders, and dignitaries 
+                    who support our mission of educational excellence. Our management team works tirelessly to 
+                    maintain the highest standards of education and infrastructure development.
+                  </p>
+                </div>
+              </div>
+            </CardBody>
+          </Card>
 
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8">

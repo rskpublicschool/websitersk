@@ -178,19 +178,19 @@ export default function DisclosurePage() {
                   <div className="p-4 border border-gray-200 rounded-lg">
                     <div className="grid md:grid-cols-4 gap-4 text-center">
                       <div>
-                        <div className="text-xl font-bold text-gray-900">300+</div>
+                        <div className="text-xl font-bold text-gray-900">750+</div>
                         <div className="text-sm text-gray-600">Primary (I-V)</div>
                       </div>
                       <div>
-                        <div className="text-xl font-bold text-gray-900">400+</div>
+                        <div className="text-xl font-bold text-gray-900">1000+</div>
                         <div className="text-sm text-gray-600">Middle (VI-VIII)</div>
                       </div>
                       <div>
-                        <div className="text-xl font-bold text-gray-900">200+</div>
+                        <div className="text-xl font-bold text-gray-900">500+</div>
                         <div className="text-sm text-gray-600">Secondary (IX-X)</div>
                       </div>
                       <div>
-                        <div className="text-xl font-bold text-gray-900">100+</div>
+                        <div className="text-xl font-bold text-gray-900">250+</div>
                         <div className="text-sm text-gray-600">Sr. Sec. (XI-XII)</div>
                       </div>
                     </div>

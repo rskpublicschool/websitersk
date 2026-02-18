@@ -76,6 +76,11 @@ export default function Footer() {
                   Gallery
                 </Link>
               </li>
+              <li>
+                <Link href="/teachers#careers" className="text-sm hover:text-emerald-400 transition-colors font-semibold">
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
 

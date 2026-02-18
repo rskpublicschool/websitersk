@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import SectionTitle from '@/app/components/SectionTitle';
 import { Card, CardBody } from '@/app/components/Card';
 import { schoolInfo } from '@/app/lib/schoolData';
@@ -22,11 +23,13 @@ export default function PrincipalPage() {
               <div className="grid md:grid-cols-3 gap-8 mb-8">
                 <div className="md:col-span-1">
                   <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
-                    <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                      <svg className="w-32 h-32 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                      </svg>
-                    </div>
+                    <Image
+                      src="/Rsk public school principle sir.webp"
+                      alt={`${schoolInfo.principalName} - Principal of RSK Public School`}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
                   </div>
                   <div className="text-center mt-4">
                     <h3 className="text-xl font-bold text-gray-900">{schoolInfo.principalName}</h3>

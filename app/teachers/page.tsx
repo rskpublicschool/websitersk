@@ -182,55 +182,132 @@ export default function TeachersPage() {
            {/* Teacher Interview Videos */}
            <div className="mb-12">
              <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Teacher Interview Videos</h3>
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-               <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden shadow-lg border border-purple-200">
                  <video 
                    className="w-full h-48 object-cover" 
-                   controls 
-                   poster="/teacher-interview-1-thumbnail.jpg"
+                   controls
+                   key="director-teacher-video"
                  >
-                   <source src="/teacher-interview-1.mp4" type="video/mp4" />
+                   <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
                    Your browser does not support the video tag.
                  </video>
                  <div className="p-4">
-                   <h4 className="font-semibold text-gray-800">Priya Sharma - Mathematics Teacher</h4>
-                   <p className="text-sm text-gray-600">"Why I love teaching at RSK"</p>
+                   <div className="flex items-center mb-2">
+                     <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                       </svg>
+                     </div>
+                     <h4 className="font-semibold text-gray-800">Director Sir</h4>
+                   </div>
+                   <p className="text-sm text-gray-600">"Vision and mission of RSK Public School"</p>
                  </div>
                </div>
                
-               <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+               <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl overflow-hidden shadow-lg border border-indigo-200">
                  <video 
                    className="w-full h-48 object-cover" 
-                   controls 
-                   poster="/teacher-interview-2-thumbnail.jpg"
+                   controls
+                   key="principal-teacher-video"
                  >
-                   <source src="/teacher-interview-2.mp4" type="video/mp4" />
+                   <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
                    Your browser does not support the video tag.
                  </video>
                  <div className="p-4">
-                   <h4 className="font-semibold text-gray-800">Rajesh Kumar - Science Teacher</h4>
-                   <p className="text-sm text-gray-600">"Innovation in teaching at RSK"</p>
+                   <div className="flex items-center mb-2">
+                     <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center mr-3">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                       </svg>
+                     </div>
+                     <h4 className="font-semibold text-gray-800">Principal Sir</h4>
+                   </div>
+                   <p className="text-sm text-gray-600">"Academic excellence and school management"</p>
                  </div>
                </div>
                
-               <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+               <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl overflow-hidden shadow-lg border border-pink-200">
                  <video 
                    className="w-full h-48 object-cover" 
-                   controls 
-                   poster="/teacher-interview-3-thumbnail.jpg"
+                   controls
                  >
-                   <source src="/teacher-interview-3.mp4" type="video/mp4" />
+                   <source src="/schoolvideos/rsk public school dehri female teacher feedback and management feedback.mp4" type="video/mp4" />
                    Your browser does not support the video tag.
                  </video>
                  <div className="p-4">
-                   <h4 className="font-semibold text-gray-800">Anita Singh - English Teacher</h4>
-                   <p className="text-sm text-gray-600">"Work-life balance at RSK"</p>
+                   <div className="flex items-center mb-2">
+                     <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center mr-3">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                       </svg>
+                     </div>
+                     <h4 className="font-semibold text-gray-800">Female Teacher</h4>
+                   </div>
+                   <p className="text-sm text-gray-600">"My experience teaching at RSK & management support"</p>
                  </div>
                </div>
-             </div>
-           </div>
+               
+               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                 <video 
+                   className="w-full h-48 object-cover" 
+                   controls
+                 >
+                   <source src="/schoolvideos/rsk public school dehri Kushal Sir science teacher feedback and management feedback.mp4" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>
+                 <div className="p-4">
+                   <div className="flex items-center mb-2">
+                     <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z" />
+                       </svg>
+                     </div>
+                     <h4 className="font-semibold text-gray-800">Kushal Sir - Science Teacher</h4>
+                   </div>
+                   <p className="text-sm text-gray-600">"Innovation in science teaching at RSK"</p>
+                 </div>
+               </div>
+               
+               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl overflow-hidden shadow-lg border border-orange-200">
+                 <video 
+                   className="w-full h-48 object-cover" 
+                   controls
+                 >
+                   <source src="/schoolvideos/rsk public school dehri Sports teacher demostrating fitness with karate with kids in backgound.mp4" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>
+                 <div className="p-4">
+                   <div className="flex items-center mb-2">
+                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                       </svg>
+                     </div>
+                     <h4 className="font-semibold text-gray-800">Sports Teacher</h4>
+                   </div>
+                   <p className="text-sm text-gray-600">"Demonstrating fitness and discipline with students"</p>
+                 </div>
+               </div>
+            </div>
+          </div>
 
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
+          {/* Our Teaching Team Photo */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Our Teaching Team</h3>
+            <div className="max-w-4xl mx-auto">
+              <img 
+                src="/teacherspage/best cbse school in Dehri RSK public school teachersgroup. .jpeg" 
+                alt="RSK Public School Teaching Team - Dedicated Educators"
+                className="w-full h-80 object-cover rounded-xl shadow-lg"
+              />
+              <p className="text-center text-gray-600 mt-4 italic">
+                Our dedicated team of experienced educators committed to excellence in teaching
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
             {/* Testimonial 1 */}
             <Card hover className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 shadow-lg">
               <CardBody className="px-6 py-8">
@@ -413,43 +490,43 @@ export default function TeachersPage() {
              <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Our Teaching Community</h3>
              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
-                 <img 
-                   src="/teacher-community-1.jpg" 
-                   alt="Teachers collaborating in staff room"
-                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                 />
+                <img 
+                  src="/teacherspage/best cbse school in Dehri RSK public school teachersgroup. .jpeg" 
+                  alt="RSK Public School Teachers Group Photo"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Staff Collaboration</div>
+                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Our Teacher Family</div>
                </div>
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
                  <img 
-                   src="/teacher-community-2.jpg" 
-                   alt="Teachers in professional development workshop"
+                   src="/schoolimages/chief guests and management.jpeg" 
+                   alt="Chief Guests and School Management"
                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                  />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Training Workshop</div>
+                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Chief Guests & Management</div>
                </div>
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
                  <img 
-                   src="/teacher-community-3.jpg" 
-                   alt="Teachers celebrating festival together"
+                   src="/schoolimages/rsk public school dehri students performance song.jpeg" 
+                   alt="Students performing song under teacher guidance"
                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                  />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Festival Celebration</div>
+                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Teacher-Guided Performance</div>
                </div>
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
                  <img 
-                   src="/teacher-community-4.jpg" 
-                   alt="Teachers mentoring new joiners"
+                   src="/schoolimages/rsk public school dehri food stall students model exhibition.jpeg" 
+                   alt="Teachers with students at model exhibition"
                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                  />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Mentorship Program</div>
+                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Model Exhibition Day</div>
                </div>
              </div>
            </div>
@@ -517,40 +594,40 @@ export default function TeachersPage() {
                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                  <div className="relative overflow-hidden rounded-xl shadow-lg group">
                    <img 
-                     src="/teacher-fun-activity-1.jpg" 
-                     alt="Teachers participating in annual sports day"
+                     src="/schoolimages/rsk public school dehri kids parate 26th jan.jpeg" 
+                     alt="Students parade on 26th January Republic Day"
                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                    <div className="absolute bottom-4 left-4 text-white">
-                     <h4 className="font-semibold text-lg">Annual Sports Day</h4>
-                     <p className="text-sm opacity-90">Teachers vs Students Cricket Match</p>
+                     <h4 className="font-semibold text-lg">Republic Day Parade</h4>
+                     <p className="text-sm opacity-90">Students marching on 26th January</p>
                    </div>
                  </div>
                  
                  <div className="relative overflow-hidden rounded-xl shadow-lg group">
                    <img 
-                     src="/teacher-fun-activity-2.jpg" 
-                     alt="Teachers cultural program performance"
+                     src="/schoolimages/rsk public school dehri kids dance.jpeg" 
+                     alt="Kids dance performance at RSK school event"
                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                    <div className="absolute bottom-4 left-4 text-white">
-                     <h4 className="font-semibold text-lg">Cultural Program</h4>
-                     <p className="text-sm opacity-90">Teachers' Dance Performance</p>
+                     <h4 className="font-semibold text-lg">Cultural Dance Program</h4>
+                     <p className="text-sm opacity-90">Kids dance performance at school event</p>
                    </div>
                  </div>
                  
                  <div className="relative overflow-hidden rounded-xl shadow-lg group">
                    <img 
-                     src="/teacher-fun-activity-3.jpg" 
-                     alt="Teachers team building activity"
+                     src="/schoolimages/rsk public school dehri students stunt formations activities  (1).jpeg" 
+                     alt="Students performing stunt formations and activities"
                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                    <div className="absolute bottom-4 left-4 text-white">
-                     <h4 className="font-semibold text-lg">Team Building</h4>
-                     <p className="text-sm opacity-90">Annual Teacher Retreat</p>
+                     <h4 className="font-semibold text-lg">Stunt Formations</h4>
+                     <p className="text-sm opacity-90">Students showcasing group activities</p>
                    </div>
                  </div>
                </div>
@@ -600,6 +677,149 @@ export default function TeachersPage() {
                  </CardBody>
                </Card>
              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Careers Section */}
+      <section id="careers" className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle centered subtitle="Join our team of passionate educators and make a difference">
+            Career Opportunities at RSK
+          </SectionTitle>
+          
+          <div className="max-w-6xl mx-auto">
+            {/* Current Openings */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <Card hover className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200">
+                <CardBody className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800">Teaching Positions</h3>
+                      <span className="text-sm text-blue-600 font-semibold">Multiple Openings</span>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                    We are looking for passionate educators for various subjects including Mathematics, Science, English, Social Studies, and more.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>B.Ed/M.Ed preferred</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Competitive salary package</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Professional development opportunities</span>
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+
+              <Card hover className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200">
+                <CardBody className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800">Administrative Roles</h3>
+                      <span className="text-sm text-emerald-600 font-semibold">Leadership Opportunities</span>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                    Join our administrative team and help shape the future of education at RSK. We offer leadership roles in various departments.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Management experience preferred</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Excellent benefits package</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Growth and advancement opportunities</span>
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+            </div>
+
+            {/* Application Process */}
+            <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 mb-12">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">How to Apply</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-white">1</span>
+                  </div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Submit Application</h4>
+                  <p className="text-sm text-gray-600">Send your resume and cover letter to our HR department</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-white">2</span>
+                  </div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Interview Process</h4>
+                  <p className="text-sm text-gray-600">Participate in our comprehensive interview and demo class</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-white">3</span>
+                  </div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Join Our Team</h4>
+                  <p className="text-sm text-gray-600">Complete onboarding and start your journey with us</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Benefits & Perks */}
+            <div className="text-center mb-12">
+              <h3 className="text-2xl font-bold text-gray-800 mb-8">Why Choose RSK as Your Career Destination?</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <div className="text-3xl mb-2">💰</div>
+                  <h4 className="font-semibold text-gray-800 text-sm">Competitive Salary</h4>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <div className="text-3xl mb-2">🏥</div>
+                  <h4 className="font-semibold text-gray-800 text-sm">Health Benefits</h4>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <div className="text-3xl mb-2">📚</div>
+                  <h4 className="font-semibold text-gray-800 text-sm">Professional Development</h4>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                  <div className="text-3xl mb-2">🎯</div>
+                  <h4 className="font-semibold text-gray-800 text-sm">Career Growth</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

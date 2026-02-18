@@ -60,6 +60,13 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://rskpublicschool.edu.in'
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/logo RSK best shcool in dehri rohtas.png', type: 'image/png' }
+    ],
+    apple: '/logo RSK best shcool in dehri rohtas.png'
   }
 };
 
@@ -71,7 +78,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo RSK best shcool in dehri rohtas.png" />
+        {/* Favicon Configuration */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo RSK best shcool in dehri rohtas.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo RSK best shcool in dehri rohtas.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1e40af" />
         

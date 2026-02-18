@@ -66,6 +66,10 @@ export const navigationItems: NavItem[] = [
     ]
   },
   {
+    label: "Careers",
+    href: "/teachers#careers"
+  },
+  {
     label: "Contact",
     href: "/contact"
   }
