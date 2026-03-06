@@ -106,11 +106,7 @@ export default function DisclosurePage() {
                         <div>
                           <div className="font-medium text-gray-900">{doc.title}</div>
                           <div className="text-sm text-gray-500">
-                            Last Updated: {new Date(doc.updatedAt).toLocaleDateString('en-IN', {
-                              year: 'numeric',
-                              month: 'long',
-                              day: 'numeric'
-                            })}
+                            Last Updated: Recently
                           </div>
                         </div>
                       </div>

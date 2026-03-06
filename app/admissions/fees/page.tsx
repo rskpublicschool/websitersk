@@ -264,7 +264,7 @@ export default function FeeStructurePage() {
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <SectionTitle centered subtitle="Transparent pricing with no hidden charges">
-          Fee Structure 2025-26
+          Fee Structure
         </SectionTitle>
 
         {/* Fee Overview */}

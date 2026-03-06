@@ -6,21 +6,27 @@ import { schoolInfo } from './lib/schoolData';
 
 export const metadata: Metadata = {
   title: {
-    default: `${schoolInfo.name} - CBSE Affiliated School in Buxar, Bihar`,
+    default: `${schoolInfo.name} - Best CBSE School in Dehri on Sone, Bihar`,
     template: `%s | ${schoolInfo.name}`
   },
-  description: `${schoolInfo.name} is a premier CBSE affiliated educational institution in Buxar, Bihar. Offering quality education from primary to senior secondary with modern infrastructure, experienced faculty, and holistic development programs.`,
+  description: `${schoolInfo.name} is the best CBSE affiliated school in Dehri on Sone, Bihar. Top-rated educational institution offering quality education from primary to senior secondary with modern infrastructure, experienced faculty, and holistic development programs. Enroll now for admission 2026-27.`,
   keywords: [
     'RSK Public School',
-    'CBSE School Buxar',
-    'Best School in Buxar',
-    'Buxar School Admission',
+    'Best CBSE School Dehri on Sone',
+    'Top School in Dehri on Sone',
+    'Best School in Dehri on Sone',
+    'CBSE School Dehri on Sone',
+    'Dehri on Sone School Admission',
     'Quality Education Bihar',
     'CBSE Affiliation',
     schoolInfo.affiliationNo,
-    'English Medium School',
-    'Primary Education',
-    'Secondary Education'
+    'English Medium School Dehri',
+    'Primary Education Dehri',
+    'Secondary Education Dehri',
+    'Best School Rohtas District',
+    'Top 10 Schools Dehri on Sone',
+    'School Admission 2026-27',
+    'Quality Education Dehri'
   ],
   authors: [{ name: schoolInfo.name }],
   creator: schoolInfo.name,
@@ -30,8 +36,8 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://rskpublicschool.edu.in',
     siteName: schoolInfo.name,
-    title: `${schoolInfo.name} - Excellence in Education`,
-    description: 'Premier CBSE affiliated school providing quality education and holistic development in Buxar, Bihar.',
+    title: `${schoolInfo.name} - Best CBSE School in Dehri on Sone`,
+    description: 'Best CBSE affiliated school in Dehri on Sone, Bihar providing quality education and holistic development. Top-rated school with excellent results and modern facilities.',
     images: [
       {
         url: '/og-image.jpg',
@@ -43,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${schoolInfo.name} - Excellence in Education`,
-    description: 'Premier CBSE affiliated school in Buxar, Bihar',
+    title: `${schoolInfo.name} - Best CBSE School in Dehri on Sone`,
+    description: 'Best CBSE affiliated school in Dehri on Sone, Bihar with excellent results and modern facilities',
     images: ['/og-image.jpg']
   },
   robots: {
@@ -96,11 +102,11 @@ export default function RootLayout({
               "alternateName": "RSK School",
               "url": "https://rskpublicschool.edu.in",
               "logo": "https://rskpublicschool.edu.in/logo%20RSK%20best%20shcool%20in%20dehri%20rohtas.png",
-              "description": "Premier CBSE affiliated school in Buxar, Bihar providing quality education",
+              "description": "Best CBSE affiliated school in Dehri on Sone, Bihar providing quality education and holistic development",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": schoolInfo.address,
-                "addressLocality": "Buxar",
+                "addressLocality": "Dehri on Sone",
                 "addressRegion": "Bihar",
                 "postalCode": schoolInfo.pinCode,
                 "addressCountry": "IN"

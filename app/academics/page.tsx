@@ -112,8 +112,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/activitiesandevent/rsk public school dehri science fair innovation.jpg" 
-                    alt="Students presenting innovative projects at RSK science fair"
+                    src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
+                    alt="Students demonstrating academic excellence at RSK Public School"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -123,9 +123,9 @@ export default function StudentsPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-bold mb-2 text-gray-800">Science Fair & Innovation</h3>
+                  <h3 className="text-lg font-bold mb-2 text-gray-800">Academic Excellence</h3>
                   <p className="text-gray-600 text-sm">
-                    Present your innovative projects, conduct experiments, and explore the wonders of science and technology.
+                    Experience outstanding academic achievement with personalized attention and innovative teaching methods.
                   </p>
                 </div>
               </CardBody>
@@ -227,8 +227,8 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/schoolimages/rsk public school dehri students NCC cadet march.jpeg" 
-                    alt="RSK students in NCC cadet training and march"
+                    src="/experienceimages/cbse school in dehri on sone RSK public school ncc in action.jpeg" 
+                    alt="RSK students in NCC training demonstrating discipline and leadership"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -296,7 +296,7 @@ export default function StudentsPage() {
               <CardBody className="p-6">
                 <div className="mb-4">
                   <img 
-                    src="/activitiesandevent/rsk public school dehri educational trips students.jpg" 
+                    src="/experienceimages/cbse school in dehri on sone RSK public school educational field trip .jpeg" 
                     alt="RSK students enjoying educational field trips and learning adventures"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
@@ -342,11 +342,11 @@ export default function StudentsPage() {
             <Card hover className="bg-gradient-to-br from-violet-50 to-purple-100 border border-violet-200 hover:shadow-lg transition-all duration-300">
               <CardBody className="p-6">
                 <div className="mb-4">
-                  <img 
-                    src="/students-ai-workshop.jpg" 
-                    alt="Students in AI innovation workshop"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
-                  />
+              <img 
+                src="/experienceimages/cbse school in dehri on sone RSK public school workshop and field visit.jpeg" 
+                alt="Students participating in educational workshops and field visits"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-violet-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg">
@@ -419,8 +419,8 @@ export default function StudentsPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800 mb-2">Science Models Exhibition</h4>
-                  <p className="text-sm text-gray-600">Creative scientific models demonstrating physics, chemistry, and biology concepts</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">Bal Mela Kid Food Stall</h4>
+                  <p className="text-sm text-gray-600">Creativity, ownership and entrepreneurial skills.</p>
                 </div>
               </div>
 
@@ -462,8 +462,8 @@ export default function StudentsPage() {
 
               <div className="bg-white rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="/schoolimages/rsk public school dehri food stall students model exhibition (6).jpeg" 
-                  alt="Technology and engineering projects"
+                  src="/activitiesandevent/rsk public school dehri science fair innovation.jpg" 
+                  alt="Students presenting innovative science projects and technology demonstrations at science exhibition"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
@@ -479,7 +479,7 @@ export default function StudentsPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800 mb-2">Interactive Learning</h4>
+                  <h4 className="font-semibold text-gray-800 mb-2">Art meets Interactive Learning</h4>
                   <p className="text-sm text-gray-600">Interactive displays that make learning fun and engaging for all students</p>
                 </div>
               </div>
@@ -805,8 +805,8 @@ export default function StudentsPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mb-12">
             <div className="relative overflow-hidden rounded-lg shadow-lg group col-span-2 row-span-2">
               <img 
-                src="/gallery-main-campus.jpg" 
-                alt="Beautiful RSK campus overview"
+                src="/experienceimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                alt="Beautiful RSK campus overview with modern facilities and green environment"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -818,8 +818,8 @@ export default function StudentsPage() {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/gallery-classroom.jpg" 
-                alt="Modern smart classrooms"
+                src="/experienceimages/cbse school in dehri on sone RSK public school dehri on sone classroom.jpeg" 
+                alt="Modern smart classrooms at RSK Public School Dehri"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -828,8 +828,8 @@ export default function StudentsPage() {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/gallery-library.jpg" 
-                alt="Well-equipped library"
+                src="/experienceimages/library rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                alt="Modern library with extensive book collection and reading facilities"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -838,8 +838,8 @@ export default function StudentsPage() {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/gallery-playground.jpg" 
-                alt="Spacious playground and sports facilities"
+                src="/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg" 
+                alt="Spacious playground and sports facilities at RSK Public School"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -848,38 +848,18 @@ export default function StudentsPage() {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/gallery-lab.jpg" 
-                alt="Science and computer labs"
+                src="/experienceimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                alt="Well-equipped science laboratories for hands-on learning"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Science Labs</div>
             </div>
             
-            <div className="relative overflow-hidden rounded-lg shadow-lg group col-span-2">
-              <img 
-                src="/gallery-cafeteria.jpg" 
-                alt="Clean and hygienic cafeteria"
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-              <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Hygienic Cafeteria</div>
-            </div>
-            
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/gallery-auditorium.jpg" 
-                alt="School auditorium for events"
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-              <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Auditorium</div>
-            </div>
-            
-            <div className="relative overflow-hidden rounded-lg shadow-lg group">
-              <img 
-                src="/gallery-transport.jpg" 
-                alt="Safe school transport system"
+                src="/experienceimages/safe transport rsk public school dehri on sone best cbse school in dehri on sone.png" 
+                alt="Safe and reliable school transport system"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -951,6 +931,38 @@ export default function StudentsPage() {
                 <p className="text-gray-600 text-sm mb-4">Awards in Arts & Culture</p>
                 <p className="text-gray-700 text-sm">
                   Students shine in music, dance, drama, and art competitions at regional and national levels.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card hover className="bg-gradient-to-br from-orange-50 to-red-100 border border-orange-200 shadow-lg">
+              <CardBody className="p-6 text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Science Olympiad Champions</h3>
+                <p className="text-3xl font-bold text-orange-600 mb-2">25</p>
+                <p className="text-gray-600 text-sm mb-4">Gold Medal Winners</p>
+                <p className="text-gray-700 text-sm">
+                  Outstanding achievement in SOF National Science Olympiad with students from Classes 1-10 securing top international ranks.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card hover className="bg-gradient-to-br from-indigo-50 to-blue-100 border border-indigo-200 shadow-lg">
+              <CardBody className="p-6 text-center">
+                <div className="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Future Scientists</h3>
+                <p className="text-3xl font-bold text-indigo-600 mb-2">100</p>
+                <p className="text-gray-600 text-sm mb-4">Olympiad Participants</p>
+                <p className="text-gray-700 text-sm">
+                  All participants received certificates and expert guidance programs have been initiated for continued excellence.
                 </p>
               </CardBody>
             </Card>

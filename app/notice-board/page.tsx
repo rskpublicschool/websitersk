@@ -3,7 +3,7 @@ import SectionTitle from '../components/SectionTitle';
 import { Card, CardBody } from '../components/Card';
 import Button from '../components/Button';
 
-export default function ResultsAnnouncementsPage() {
+export default function NoticeBoardPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
@@ -11,10 +11,10 @@ export default function ResultsAnnouncementsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Results & Announcements
+              Notice Board
             </h1>
             <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
-              Stay updated with the latest exam results, school announcements, and upcoming events
+              Stay updated with the latest school notices, announcements, events and important communications
             </p>
           </div>
         </div>
@@ -35,16 +35,13 @@ export default function ResultsAnnouncementsPage() {
                     <div className="w-3 h-3 bg-red-500 rounded-full mt-2"></div>
                   </div>
                   <div className="flex-1">
-                    <div className="text-xs text-red-600 font-semibold mb-1">URGENT • 2 hours ago</div>
+                    <div className="text-xs text-red-600 font-semibold mb-1">URGENT</div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">
                       Class X & XII Board Exam Schedule Released
                     </h3>
-                    <p className="text-gray-600 text-sm mb-3">
+                    <p className="text-gray-600 text-sm">
                       CBSE has released the official examination schedule for Class X and XII board exams. Students are advised to check their roll numbers and exam centers.
                     </p>
-                    <Link href="#" className="text-red-600 font-medium text-sm hover:underline">
-                      View Schedule →
-                    </Link>
                   </div>
                 </div>
               </CardBody>
@@ -57,16 +54,13 @@ export default function ResultsAnnouncementsPage() {
                     <div className="w-3 h-3 bg-green-500 rounded-full mt-2"></div>
                   </div>
                   <div className="flex-1">
-                    <div className="text-xs text-green-600 font-semibold mb-1">ACHIEVEMENT • 1 day ago</div>
+                    <div className="text-xs text-green-600 font-semibold mb-1">ACHIEVEMENT</div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">
                       100% Pass Rate in Class XII Results
                     </h3>
-                    <p className="text-gray-600 text-sm mb-3">
+                    <p className="text-gray-600 text-sm">
                       RSK Public School achieves remarkable 100% pass percentage in CBSE Class XII examinations with 90% students scoring above 80%.
                     </p>
-                    <Link href="#" className="text-green-600 font-medium text-sm hover:underline">
-                      View Results →
-                    </Link>
                   </div>
                 </div>
               </CardBody>
@@ -79,16 +73,13 @@ export default function ResultsAnnouncementsPage() {
                     <div className="w-3 h-3 bg-blue-500 rounded-full mt-2"></div>
                   </div>
                   <div className="flex-1">
-                    <div className="text-xs text-blue-600 font-semibold mb-1">ADMISSION • 3 days ago</div>
+                    <div className="text-xs text-blue-600 font-semibold mb-1">ADMISSION</div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      New Session 2025-26 Admissions Open
+                      New Session 2026-27 Admissions Open
                     </h3>
-                    <p className="text-gray-600 text-sm mb-3">
+                    <p className="text-gray-600 text-sm">
                       Admissions are now open for all classes from Nursery to Class XI. Limited seats available. Apply now to secure your child's future.
                     </p>
-                    <Link href="/admissions/apply" className="text-blue-600 font-medium text-sm hover:underline">
-                      Apply Now →
-                    </Link>
                   </div>
                 </div>
               </CardBody>
@@ -115,11 +106,8 @@ export default function ResultsAnnouncementsPage() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-amber-800 mb-1">Fee Payment Reminder</h4>
                   <p className="text-amber-700 text-sm">
-                    Last date for quarterly fee payment is March 15, 2026. Late fee charges will apply after the due date.
+                    Please clear all last year dues before the new session 2026-27 starts. Late fee charges will apply after the due date.
                   </p>
-                </div>
-                <div className="text-xs text-amber-600 font-medium">
-                  Mar 10, 2026
                 </div>
               </CardBody>
             </Card>
@@ -134,11 +122,8 @@ export default function ResultsAnnouncementsPage() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-blue-800 mb-1">Parent-Teacher Meeting</h4>
                   <p className="text-blue-700 text-sm">
-                    Monthly parent-teacher meeting scheduled for March 20, 2026, from 10:00 AM to 2:00 PM. Please confirm your attendance.
+                    Parent-teacher meeting scheduled soon. Please confirm your attendance.
                   </p>
-                </div>
-                <div className="text-xs text-blue-600 font-medium">
-                  Mar 8, 2026
                 </div>
               </CardBody>
             </Card>
@@ -153,11 +138,8 @@ export default function ResultsAnnouncementsPage() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-green-800 mb-1">Health Check-up Camp</h4>
                   <p className="text-green-700 text-sm">
-                    Free health check-up camp for all students on March 18, 2026. Dental and eye check-up included.
+                    Free health check-up camp for all students scheduled soon. Dental and eye check-up included.
                   </p>
-                </div>
-                <div className="text-xs text-green-600 font-medium">
-                  Mar 5, 2026
                 </div>
               </CardBody>
             </Card>
@@ -191,7 +173,7 @@ export default function ResultsAnnouncementsPage() {
                       We are proud to announce that RSK Public School has been awarded the "Academic Excellence Award" by the District Education Department for outstanding performance in CBSE board examinations and overall student development.
                     </p>
                     <div className="text-sm text-purple-700">
-                      <strong>Date:</strong> March 1, 2026 | <strong>By:</strong> Principal's Office
+                      <strong>By:</strong> Principal's Office
                     </div>
                   </div>
                 </div>
@@ -213,10 +195,10 @@ export default function ResultsAnnouncementsPage() {
                       New Infrastructure Development
                     </h3>
                     <p className="text-indigo-800 mb-4">
-                      Construction of new science laboratories and computer lab has been completed. The state-of-the-art facilities will be inaugurated on March 25, 2026. These additions will enhance our students' practical learning experience significantly.
+                      Construction of new science laboratories and computer lab has been completed. The state-of-the-art facilities will be inaugurated soon. These additions will enhance our students' practical learning experience significantly.
                     </p>
                     <div className="text-sm text-indigo-700">
-                      <strong>Date:</strong> February 28, 2026 | <strong>By:</strong> Management
+                      <strong>By:</strong> Management
                     </div>
                   </div>
                 </div>
@@ -246,10 +228,6 @@ export default function ResultsAnnouncementsPage() {
                   <p className="text-rose-800 text-sm mb-3">
                     Inter-house sports competition with athletics, games, and cultural performances.
                   </p>
-                  <div className="bg-rose-200 rounded-lg p-3 mb-3">
-                    <div className="text-rose-900 font-semibold">March 22, 2026</div>
-                    <div className="text-rose-700 text-sm">9:00 AM - 4:00 PM</div>
-                  </div>
                   <div className="text-rose-600 text-xs">School Playground</div>
                 </div>
               </CardBody>
@@ -267,10 +245,6 @@ export default function ResultsAnnouncementsPage() {
                   <p className="text-teal-800 text-sm mb-3">
                     Student projects and experiments showcase with interactive demonstrations.
                   </p>
-                  <div className="bg-teal-200 rounded-lg p-3 mb-3">
-                    <div className="text-teal-900 font-semibold">March 28, 2026</div>
-                    <div className="text-teal-700 text-sm">10:00 AM - 3:00 PM</div>
-                  </div>
                   <div className="text-teal-600 text-xs">Science Block</div>
                 </div>
               </CardBody>
@@ -288,10 +262,6 @@ export default function ResultsAnnouncementsPage() {
                   <p className="text-orange-800 text-sm mb-3">
                     Annual cultural program featuring music, dance, drama, and art competitions.
                   </p>
-                  <div className="bg-orange-200 rounded-lg p-3 mb-3">
-                    <div className="text-orange-900 font-semibold">April 5, 2026</div>
-                    <div className="text-orange-700 text-sm">6:00 PM - 9:00 PM</div>
-                  </div>
                   <div className="text-orange-600 text-xs">Main Auditorium</div>
                 </div>
               </CardBody>
@@ -308,7 +278,7 @@ export default function ResultsAnnouncementsPage() {
               Stay Connected with RSK Public School
             </h2>
             <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
-              Never miss important updates, results, or announcements. Join our community and be the first to know about everything happening at RSK Public School.
+              Never miss important updates, notices, or announcements. Join our community and be the first to know about everything happening at RSK Public School.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button href="/admissions/apply" variant="secondary" size="lg" className="w-full sm:w-auto">
@@ -324,7 +294,7 @@ export default function ResultsAnnouncementsPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
                 <a
-                  href="https://wa.me/919431234567?text=Subscribe%20to%20RSK%20updates"
+                  href="https://wa.me/919631160967?text=Subscribe%20to%20RSK%20updates"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition-colors duration-300"

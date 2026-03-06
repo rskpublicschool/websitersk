@@ -14,7 +14,7 @@ export default function AdmissionsPage() {
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <SectionTitle centered subtitle="Join our community of learners and leaders">
-          Admissions 2025-26
+          Admissions 2026-27
         </SectionTitle>
 
         <div className="max-w-5xl mx-auto space-y-8">
@@ -24,7 +24,7 @@ export default function AdmissionsPage() {
               <span className="font-semibold">🎓 Admissions Open</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-3">
-              Academic Year 2025-26
+              Academic Year 2026-27
             </h2>
             <p className="text-xl text-green-100 mb-6">
               Limited seats available for all classes. Apply now!
@@ -116,66 +116,6 @@ export default function AdmissionsPage() {
             </CardBody>
           </Card>
 
-          {/* Fee Structure */}
-          <Card>
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <h3 className="text-2xl font-bold text-gray-900">Fee Structure</h3>
-                <Link href="/admissions/fees" className="text-blue-600 hover:text-blue-700 font-medium text-sm">
-                  View Details →
-                </Link>
-              </div>
-            </CardHeader>
-            <CardBody>
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900">Class</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900">Admission Fee</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900">Annual Fee</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900">Monthly Fee</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100">
-                      <td className="py-3 px-4 text-gray-700">Nursery - UKG</td>
-                      <td className="py-3 px-4 text-gray-700">₹3,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹8,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹1,200</td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="py-3 px-4 text-gray-700">Class I - V</td>
-                      <td className="py-3 px-4 text-gray-700">₹3,500</td>
-                      <td className="py-3 px-4 text-gray-700">₹10,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹1,500</td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="py-3 px-4 text-gray-700">Class VI - VIII</td>
-                      <td className="py-3 px-4 text-gray-700">₹4,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹12,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹1,800</td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="py-3 px-4 text-gray-700">Class IX - X</td>
-                      <td className="py-3 px-4 text-gray-700">₹5,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹15,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹2,200</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4 text-gray-700">Class XI - XII</td>
-                      <td className="py-3 px-4 text-gray-700">₹6,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹18,000</td>
-                      <td className="py-3 px-4 text-gray-700">₹2,500</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-sm text-gray-600 mt-4">
-                * Fees are subject to revision. Bus fee is additional and varies based on distance.
-              </p>
-            </CardBody>
-          </Card>
 
           {/* Important Dates */}
           <Card>
@@ -190,16 +130,7 @@ export default function AdmissionsPage() {
                   </svg>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Admission Opens</h4>
-                    <p className="text-gray-700">January 15, 2025</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4 p-4 bg-green-50 rounded-lg">
-                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Last Date to Apply</h4>
-                    <p className="text-gray-700">March 31, 2025</p>
+                    <p className="text-gray-700">Open Now</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-amber-50 rounded-lg">
@@ -208,7 +139,7 @@ export default function AdmissionsPage() {
                   </svg>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Assessment Dates</h4>
-                    <p className="text-gray-700">February - March 2025</p>
+                    <p className="text-gray-700">As per schedule</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-purple-50 rounded-lg">
@@ -217,7 +148,7 @@ export default function AdmissionsPage() {
                   </svg>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Session Starts</h4>
-                    <p className="text-gray-700">April 1, 2025</p>
+                    <p className="text-gray-700">As per academic calendar</p>
                   </div>
                 </div>
               </div>

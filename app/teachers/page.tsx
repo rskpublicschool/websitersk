@@ -487,16 +487,16 @@ export default function TeachersPage() {
 
            {/* Teacher Community Pictures */}
            <div className="mb-12">
-             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Our Teaching Community</h3>
+             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Our Teaching Community & Efforts</h3>
              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img 
-                  src="/teacherspage/best cbse school in Dehri RSK public school teachersgroup. .jpeg" 
-                  alt="RSK Public School Teachers Group Photo"
+                  src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
+                  alt="Academic excellence at RSK Public School"
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Our Teacher Family</div>
+                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Academic Excellence</div>
                </div>
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
@@ -511,8 +511,8 @@ export default function TeachersPage() {
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
                  <img 
-                   src="/schoolimages/rsk public school dehri students performance song.jpeg" 
-                   alt="Students performing song under teacher guidance"
+                   src="/experienceimages/cbse school in dehri on sone RSK public school teacher guided performance.jpeg" 
+                   alt="Teacher guiding student performance at RSK Public School"
                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                  />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
@@ -521,12 +521,12 @@ export default function TeachersPage() {
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group">
                  <img 
-                   src="/schoolimages/rsk public school dehri food stall students model exhibition.jpeg" 
-                   alt="Teachers with students at model exhibition"
+                   src="/experienceimages/cbse school in dehri on sone RSK public school dehri on sone classroom.jpeg" 
+                   alt="Modern classroom environment at RSK Public School"
                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                  />
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Model Exhibition Day</div>
+                 <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Modern Classroom</div>
                </div>
              </div>
            </div>
@@ -620,14 +620,14 @@ export default function TeachersPage() {
                  
                  <div className="relative overflow-hidden rounded-xl shadow-lg group">
                    <img 
-                     src="/schoolimages/rsk public school dehri students stunt formations activities  (1).jpeg" 
-                     alt="Students performing stunt formations and activities"
+                     src="/experienceimages/cbse school in dehri on sone RSK public school academic success.jpeg" 
+                     alt="Students celebrating academic success at RSK"
                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                    <div className="absolute bottom-4 left-4 text-white">
-                     <h4 className="font-semibold text-lg">Stunt Formations</h4>
-                     <p className="text-sm opacity-90">Students showcasing group activities</p>
+                     <h4 className="font-semibold text-lg">Academic Success</h4>
+                     <p className="text-sm opacity-90">Students achieving academic excellence</p>
                    </div>
                  </div>
                </div>
@@ -773,27 +773,34 @@ export default function TeachersPage() {
             {/* Application Process */}
             <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 mb-12">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">How to Apply</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-white">1</span>
                   </div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Submit Application</h4>
-                  <p className="text-sm text-gray-600">Send your resume and cover letter to our HR department</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">Reach Us</h4>
+                  <p className="text-sm text-gray-600">Contact us through phone, email, or visit our school to express your interest</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-white">2</span>
                   </div>
                   <h4 className="font-semibold text-gray-800 mb-2">Interview Process</h4>
-                  <p className="text-sm text-gray-600">Participate in our comprehensive interview and demo class</p>
+                  <p className="text-sm text-gray-600">Participate in our comprehensive interview and demo class session</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-white">3</span>
+                  </div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Document Verification</h4>
+                  <p className="text-sm text-gray-600">Submit and verify all required educational and professional documents</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-white">3</span>
+                    <span className="text-2xl font-bold text-white">4</span>
                   </div>
                   <h4 className="font-semibold text-gray-800 mb-2">Join Our Team</h4>
-                  <p className="text-sm text-gray-600">Complete onboarding and start your journey with us</p>
+                  <p className="text-sm text-gray-600">Complete onboarding process and start your teaching journey with us</p>
                 </div>
               </div>
             </div>

@@ -224,6 +224,209 @@ export default function DisciplinePage() {
               </ul>
             </CardBody>
           </Card>
+
+          {/* Dress Code */}
+          <Card>
+            <CardHeader>
+              <h3 className="text-2xl font-bold text-gray-900">School Dress Code</h3>
+            </CardHeader>
+            <CardBody>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                A neat and proper uniform is mandatory for all students. It instills discipline, 
+                creates equality, and builds school identity.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Boys Dress Code */}
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-blue-900 mb-4 text-lg flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                    Boys Uniform
+                  </h4>
+                  <div className="space-y-4">
+                    <div>
+                      <h5 className="font-medium text-blue-800 mb-1">Summer (April - September)</h5>
+                      <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                        <li>Light blue shirt with school monogram</li>
+                        <li>Navy blue shorts (Class I-V) / Navy blue trousers (Class VI-XII)</li>
+                        <li>Navy blue tie with school logo</li>
+                        <li>Navy blue belt</li>
+                        <li>White socks</li>
+                        <li>Black formal shoes</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 className="font-medium text-blue-800 mb-1">Winter (October - March)</h5>
+                      <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                        <li>White shirt with school monogram</li>
+                        <li>Navy blue trousers</li>
+                        <li>Navy blue sweater with school logo</li>
+                        <li>Navy blue blazer (optional)</li>
+                        <li>Navy blue tie</li>
+                        <li>Black formal shoes</li>
+                        <li>Navy blue socks</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Girls Dress Code */}
+                <div className="bg-pink-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-pink-900 mb-4 text-lg flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                    Girls Uniform
+                  </h4>
+                  <div className="space-y-4">
+                    <div>
+                      <h5 className="font-medium text-pink-800 mb-1">Summer (April - September)</h5>
+                      <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                        <li>Light blue shirt with school monogram</li>
+                        <li>Navy blue skirt (knee-length)</li>
+                        <li>Navy blue tie with school logo</li>
+                        <li>White socks (below knee)</li>
+                        <li>Black formal shoes</li>
+                        <li>Navy blue ribbon for hair</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 className="font-medium text-pink-800 mb-1">Winter (October - March)</h5>
+                      <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                        <li>White shirt with school monogram</li>
+                        <li>Navy blue skirt (knee-length)</li>
+                        <li>Navy blue sweater with school logo</li>
+                        <li>Navy blue blazer (optional)</li>
+                        <li>Navy blue tie</li>
+                        <li>Black formal shoes</li>
+                        <li>Navy blue socks</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-400">
+                <h5 className="font-semibold text-amber-800 mb-2">Additional Guidelines:</h5>
+                <ul className="list-disc list-inside text-amber-700 text-sm space-y-1 ml-4">
+                  <li>Hair must be neatly combed; boys should have short, tidy hair</li>
+                  <li>Girls with long hair must tie it with navy blue ribbon only</li>
+                  <li>No makeup, nail polish, or jewelry (except small ear studs for girls)</li>
+                  <li>School ID card must be worn at all times</li>
+                  <li>Shoes must be polished and clean daily</li>
+                  <li>Sports uniform for PE classes as per schedule</li>
+                </ul>
+              </div>
+            </CardBody>
+          </Card>
+
+          {/* School Days and Timings */}
+          <Card>
+            <CardHeader>
+              <h3 className="text-2xl font-bold text-gray-900">School Days & Timings</h3>
+            </CardHeader>
+            <CardBody>
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Summer Timings */}
+                <div className="bg-orange-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-orange-900 mb-4 text-lg flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+                    </svg>
+                    Summer Session (April - September)
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">School Hours</span>
+                      <span className="text-orange-700 font-semibold">7:00 AM - 12:00 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Assembly</span>
+                      <span className="text-orange-700 font-semibold">7:00 AM - 7:15 AM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Classes</span>
+                      <span className="text-orange-700 font-semibold">7:15 AM - 11:40 AM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Recess</span>
+                      <span className="text-orange-700 font-semibold">9:30 AM - 9:50 AM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Dispersal</span>
+                      <span className="text-orange-700 font-semibold">11:40 AM - 12:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Winter Timings */}
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-blue-900 mb-4 text-lg flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
+                    </svg>
+                    Winter Session (October - March)
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">School Hours</span>
+                      <span className="text-blue-700 font-semibold">8:00 AM - 1:30 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Assembly</span>
+                      <span className="text-blue-700 font-semibold">8:00 AM - 8:15 AM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Classes</span>
+                      <span className="text-blue-700 font-semibold">8:15 AM - 1:10 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Recess</span>
+                      <span className="text-blue-700 font-semibold">10:30 AM - 10:50 AM</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
+                      <span className="font-medium text-gray-800">Dispersal</span>
+                      <span className="text-blue-700 font-semibold">1:10 PM - 1:30 PM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 grid md:grid-cols-2 gap-6">
+                <div className="p-4 bg-green-50 rounded-lg">
+                  <h5 className="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                    </svg>
+                    Working Days
+                  </h5>
+                  <ul className="text-green-700 text-sm space-y-1">
+                    <li>Monday to Friday: Full working days</li>
+                    <li>Saturday: Working day (half day)</li>
+                    <li>Saturday Timing: 8:00 AM - 11:30 AM</li>
+                    <li>Sunday: Weekly off</li>
+                  </ul>
+                </div>
+
+                <div className="p-4 bg-purple-50 rounded-lg">
+                  <h5 className="font-semibold text-purple-800 mb-2 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Important Notes
+                  </h5>
+                  <ul className="text-purple-700 text-sm space-y-1">
+                    <li>Gates open 15 minutes before school</li>
+                    <li>Late arrivals require gate pass</li>
+                    <li>Parents must inform for early pickup</li>
+                    <li>School transport available</li>
+                  </ul>
+                </div>
+              </div>
+            </CardBody>
+          </Card>
         </div>
       </div>
     </div>

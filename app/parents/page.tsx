@@ -89,8 +89,8 @@ export default function ParentsPage() {
               <CardBody className="px-4 py-6">
                 <div className="mb-4">
                   <img 
-                    src="/parents-trust-results.jpg" 
-                    alt="Students celebrating 100% results"
+                    src="/experienceimages/cbse school in dehri on sone RSK public school academic success.jpeg" 
+                    alt="Students achieving academic success and 100% results at RSK"
                     className="w-full h-32 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -135,8 +135,8 @@ export default function ParentsPage() {
               <CardBody className="px-4 py-6">
                 <div className="mb-4">
                   <img 
-                    src="/parents-trust-holistic.jpg" 
-                    alt="Students in various holistic development activities"
+                    src="/activitiesandevent/rsk public school dehri annuals day celebration.jpg" 
+                    alt="Students participating in holistic development activities at RSK annual day"
                     className="w-full h-32 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -158,8 +158,8 @@ export default function ParentsPage() {
               <CardBody className="px-4 py-6">
                 <div className="mb-4">
                   <img 
-                    src="/parents-trust-safety.jpg" 
-                    alt="Safe and secure school environment with CCTV"
+                    src="/experienceimages/safe transport rsk public school dehri on sone best cbse school in dehri on sone.png" 
+                    alt="Safe and secure transport system ensuring student safety at RSK"
                     className="w-full h-32 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -181,8 +181,8 @@ export default function ParentsPage() {
               <CardBody className="px-4 py-6">
                 <div className="mb-4">
                   <img 
-                    src="/parents-trust-communication.jpg" 
-                    alt="Parent-teacher meeting and communication"
+                    src="/experienceimages/cbse school in dehri on sone RSK public school dehri on sone ptm.jpg" 
+                    alt="Parent-teacher meeting at RSK Public School Dehri"
                     className="w-full h-32 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -204,8 +204,8 @@ export default function ParentsPage() {
               <CardBody className="px-4 py-6">
                 <div className="mb-4">
                   <img 
-                    src="/parents-trust-cbse.jpg" 
-                    alt="Modern CBSE curriculum and teaching methods"
+                    src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
+                    alt="CBSE excellence and modern teaching methods at RSK Public School"
                     className="w-full h-32 object-cover rounded-lg mb-4"
                   />
                 </div>
@@ -501,11 +501,39 @@ export default function ParentsPage() {
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Real Student Success Stories</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               
+              {/* Success Story - Science Olympiad Achievement */}
+              <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl shadow-lg overflow-hidden border-2 border-yellow-200">
+                <div className="h-48 bg-gradient-to-br from-yellow-400 to-orange-400 flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <div className="text-2xl font-bold">🏆</div>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center mb-3">
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3 animate-pulse"></div>
+                    <span className="text-sm font-semibold text-yellow-600">LATEST ACHIEVEMENT</span>
+                  </div>
+                  <h4 className="font-bold text-gray-800 mb-2">Science Olympiad Champions!</h4>
+                  <p className="text-gray-600 text-sm mb-4">
+                    25 of our students just won Gold Medal of Excellence in SOF National Science Olympiad! From Class 1 to Class 10, they've made us incredibly proud with top international rankings.
+                  </p>
+                  <div className="flex items-center text-xs text-gray-500">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>25 Gold Medals • 100 Participants • Expert guidance initiated</span>
+                  </div>
+                </div>
+              </div>
+
               {/* Success Story 1 - Academic Excellence */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <img 
-                  src="/schoolimages/rsk public school dehri food stall students model exhibition (1).jpeg" 
-                  alt="Student showcasing innovative science project"
+                  src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
+                  alt="Student demonstrating academic excellence at RSK"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -604,8 +632,8 @@ export default function ParentsPage() {
               {/* Success Story 5 - Academic Transformation */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <img 
-                  src="/activitiesandevent/rsk public school dehri educational trips students.jpg" 
-                  alt="Students learning through educational field trips"
+                  src="/experienceimages/cbse school in dehri on sone RSK public school dehri student performance report.jpeg" 
+                  alt="Student performance evaluation and progress tracking at RSK"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -613,9 +641,9 @@ export default function ParentsPage() {
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
                     <span className="text-sm font-semibold text-red-600">ACADEMIC TURNAROUND</span>
                   </div>
-                  <h4 className="font-bold text-gray-800 mb-2">Struggling to Straight A's</h4>
+                  <h4 className="font-bold text-gray-800 mb-2">Performance Monitoring Success</h4>
                   <p className="text-gray-600 text-sm mb-4">
-                    Kiran was failing in mathematics when he joined RSK. Through personalized tutoring and educational trips, he now scores 95%+ consistently.
+                    Through detailed performance tracking and personalized attention, students achieve consistent improvement in their academic results.
                   </p>
                   <div className="flex items-center text-xs text-gray-500">
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -629,8 +657,8 @@ export default function ParentsPage() {
               {/* Success Story 6 - Innovation & Technology */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <img 
-                  src="/schoolimages/rsk public school dehri food stall students model exhibition (5).jpeg" 
-                  alt="Student presenting innovative technology project"
+                  src="/activitiesandevent/rsk public school dehri science fair innovation.jpg" 
+                  alt="Students presenting innovative science projects at RSK science exhibition"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -638,15 +666,15 @@ export default function ParentsPage() {
                     <div className="w-3 h-3 bg-indigo-500 rounded-full mr-3"></div>
                     <span className="text-sm font-semibold text-indigo-600">INNOVATION SUCCESS</span>
                   </div>
-                  <h4 className="font-bold text-gray-800 mb-2">Young Inventor at 14</h4>
+                  <h4 className="font-bold text-gray-800 mb-2">Science Fair Champion</h4>
                   <p className="text-gray-600 text-sm mb-4">
-                    Sania's innovative water purification model at RSK's science fair caught the attention of IIT professors and won national recognition.
+                    Ritika's solar-powered water filtration project won first place at RSK's annual science exhibition and was selected for the district-level science fair competition.
                   </p>
                   <div className="flex items-center text-xs text-gray-500">
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>National innovation award • IIT recognition</span>
+                    <span>School science fair winner • District competition qualifier</span>
                   </div>
                 </div>
               </div>
@@ -1196,8 +1224,8 @@ export default function ParentsPage() {
               {/* Educational Trips */}
               <div className="bg-white rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="/activitiesandevent/rsk public school dehri educational trips students.jpg" 
-                  alt="RSK students on exciting educational field trips"
+                  src="/experienceimages/cbse school in dehri on sone RSK public school educational field trip .jpeg" 
+                  alt="RSK students enjoying educational field trips and learning adventures"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">

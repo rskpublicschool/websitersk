@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 };
 
 export default function InfrastructurePage() {
+  // Function to get appropriate image for each infrastructure detail
+  const getInfrastructureImage = (label: string) => {
+    const imageMap: { [key: string]: string } = {
+      "Total Campus Area": "/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg",
+      "Number of Classrooms": "/experienceimages/cbse school in dehri on sone RSK public school dehri on sone classroom.jpeg",
+      "Science Laboratories": "/schoolimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg",
+      "Computer Labs": "/schoolimages/computer lab rsk public school dehri on sone cbse school in dehri on sone.webp",
+      "Library": "/schoolimages/library rsk public school dehri on sone best cbse school in dehri on sone.jpg",
+      "Playground": "/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg",
+      "Smart Classroom": "/schoolimages/smart classroom rsk public school dehri on sone best cbse school in dehri on sone.jpeg",
+      "Girls' Toilets": "/schoolimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg",
+      "Boys' Toilets": "/schoolimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg"
+    };
+    return imageMap[label] || "/Rsk public school dehri model image.webp";
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4">
@@ -31,18 +47,19 @@ export default function InfrastructurePage() {
           {/* Total Campus Area Image */}
           <Card>
             <CardHeader>
-              <h3 className="text-2xl font-bold text-gray-900 text-center">Our Beautiful Campus - 2.5 Acres</h3>
+              <h3 className="text-2xl font-bold text-gray-900 text-center">Our Beautiful Campus - 2 Acres</h3>
             </CardHeader>
             <CardBody>
-              <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-500">
-                  <svg className="w-16 h-16 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <p className="text-lg font-medium">Total Campus Area Image</p>
-                  <p className="text-sm">Upload campus overview image here</p>
-                </div>
+              <div className="w-full h-64 rounded-lg overflow-hidden">
+                <img 
+                  src="/Rsk public school dehri model image.webp" 
+                  alt="RSK Public School Beautiful Campus - 2 Acres Campus Area"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
+              <p className="text-center text-gray-600 mt-4 text-sm">
+                Our modern 2-acre campus provides a safe and conducive learning environment
+              </p>
             </CardBody>
           </Card>
 
@@ -51,15 +68,14 @@ export default function InfrastructurePage() {
             {infrastructureDetails.map((detail, index) => (
               <Card key={index} hover>
                 <CardBody className="p-6">
-                  {/* Image placeholder for each infrastructure detail */}
+                  {/* Image for each infrastructure detail */}
                   <div className="mb-4">
-                    <div className="w-full h-32 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <div className="text-center text-gray-500">
-                        <svg className="w-8 h-8 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <p className="text-xs">{detail.label} Image</p>
-                      </div>
+                    <div className="w-full h-32 rounded-lg overflow-hidden">
+                      <img 
+                        src={getInfrastructureImage(detail.label)} 
+                        alt={`${detail.label} - ${detail.value}`}
+                        className="w-full h-full object-cover rounded-lg"
+                      />
                     </div>
                   </div>
                   <div className="text-center">
@@ -86,16 +102,14 @@ export default function InfrastructurePage() {
                 </div>
               </CardHeader>
               <CardBody>
-                {/* Image placeholder for Smart Classrooms */}
+                {/* Image for Smart Classrooms */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <p className="text-sm font-medium">Smart Classrooms Image</p>
-                      <p className="text-xs">Upload image here</p>
-                    </div>
+                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="/schoolimages/smart classroom rsk public school dehri on sone best cbse school in dehri on sone.jpeg" 
+                      alt="RSK Public School Smart Classroom with modern facilities"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -140,16 +154,14 @@ export default function InfrastructurePage() {
                 </div>
               </CardHeader>
               <CardBody>
-                {/* Image placeholder for Science Laboratories */}
+                {/* Image for Science Laboratory */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <p className="text-sm font-medium">Science Laboratories Image</p>
-                      <p className="text-xs">Upload image here</p>
-                    </div>
+                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="/schoolimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                      alt="RSK Public School Science Laboratory with modern equipment"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -157,7 +169,7 @@ export default function InfrastructurePage() {
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Separate Physics, Chemistry & Biology labs</span>
+                    <span>Multi-purpose science lab for Physics, Chemistry & Biology</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -194,16 +206,14 @@ export default function InfrastructurePage() {
                 </div>
               </CardHeader>
               <CardBody>
-                {/* Image placeholder for Computer Laboratories */}
+                {/* Image for Computer Laboratories */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <p className="text-sm font-medium">Computer Laboratories Image</p>
-                      <p className="text-xs">Upload image here</p>
-                    </div>
+                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="/schoolimages/computer lab rsk public school dehri on sone cbse school in dehri on sone.webp" 
+                      alt="RSK Public School Computer Laboratory with modern computers"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -211,7 +221,7 @@ export default function InfrastructurePage() {
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>60+ modern computers with latest software</span>
+                    <span>Modern computers with latest software</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -248,16 +258,14 @@ export default function InfrastructurePage() {
                 </div>
               </CardHeader>
               <CardBody>
-                {/* Image placeholder for Library & Reading Room */}
+                {/* Image for Library & Reading Room */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <p className="text-sm font-medium">Library & Reading Room Image</p>
-                      <p className="text-xs">Upload image here</p>
-                    </div>
+                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="/schoolimages/library rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                      alt="RSK Public School Library with reading room and books collection"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -304,14 +312,12 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image placeholder for Sports & Recreation */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <p className="text-sm font-medium">Sports & Recreation Image</p>
-                      <p className="text-xs">Upload image here</p>
-                    </div>
+                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg" 
+                      alt="RSK Public School Playground and Sports Ground"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -358,14 +364,12 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image placeholder for Safety & Security */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      <p className="text-sm font-medium">Safety & Security Image</p>
-                      <p className="text-xs">Upload image here</p>
-                    </div>
+                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="/schoolimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                      alt="RSK Public School Safe and Secure Campus Premises"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -409,7 +413,7 @@ export default function InfrastructurePage() {
                   <h4 className="font-semibold text-gray-900 mb-3">Sanitation Facilities</h4>
                   <ul className="space-y-2 text-gray-700">
                     <li>• Separate toilet facilities for girls and boys</li>
-                    <li>• 12 units each with proper maintenance</li>
+                    <li>• 10+ units each with proper maintenance</li>
                     <li>• Clean drinking water facilities</li>
                     <li>• Regular cleaning and hygiene protocols</li>
                   </ul>

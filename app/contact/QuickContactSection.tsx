@@ -27,12 +27,12 @@ export default function QuickContactSection() {
           <p className="text-gray-600 mb-4 text-sm">Get instant replies to your questions. Perfect for quick queries and immediate assistance.</p>
           <div className="space-y-2">
             <a 
-              href="https://wa.me/919911800967?text=Hey%20RSK%2C%20I%20wanted%20to%20get%20in%20touch.%20Let's%20connect." 
+              href="https://wa.me/919631160967?text=Hey%20RSK%2C%20I%20wanted%20to%20get%20in%20touch.%20Let's%20connect." 
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
             >
-              WhatsApp: 09911800967
+              WhatsApp: 9631160967
             </a>
             <a 
               href="https://wa.me/918210922434?text=Hey%20RSK%2C%20I%20wanted%20to%20get%20in%20touch.%20Let's%20connect." 
@@ -40,7 +40,15 @@ export default function QuickContactSection() {
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
             >
-              WhatsApp: 08210922434
+              WhatsApp: 8210922434
+            </a>
+            <a 
+              href="https://wa.me/919934958096?text=Hey%20RSK%2C%20I%20wanted%20to%20get%20in%20touch.%20Let's%20connect." 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center px-4 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors font-medium"
+            >
+              WhatsApp: 9934958096
             </a>
           </div>
         </div>

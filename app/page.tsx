@@ -5,6 +5,17 @@ import { Card, CardBody } from './components/Card';
 import CounterStat from './components/CounterStat';
 import VisitorCounterRobust from './components/VisitorCounterRobust';
 import { schoolInfo } from './lib/schoolData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Best CBSE School in Dehri on Sone - RSK Public School | Top School Bihar',
+  description: 'RSK Public School - Best CBSE school in Dehri on Sone, Bihar. Top-rated educational institution with excellent results, modern facilities, and holistic development. Admission open for 2026-27. Call 9631160967 for enquiry.',
+  keywords: 'best CBSE school Dehri on Sone, top school Dehri on Sone, best school Dehri on Sone, RSK Public School, CBSE admission Dehri, quality education Bihar, school admission 2026-27',
+  openGraph: {
+    title: 'Best CBSE School in Dehri on Sone - RSK Public School',
+    description: 'Top-rated CBSE school in Dehri on Sone with excellent results and modern facilities. Admission open for 2026-27.',
+  }
+};
 
 export default function HomePage() {
   return (
@@ -26,6 +37,11 @@ export default function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
+            {/* Latest Achievement Banner */}
+            <div className="inline-block mb-4 px-6 py-3 bg-gradient-to-r from-yellow-500/30 to-orange-500/30 backdrop-blur-md rounded-full border border-yellow-300/50 shadow-lg animate-pulse">
+              <span className="text-sm sm:text-base font-bold text-yellow-100">🏆 BREAKING: 25 Students at RSK Win Gold in National Science Olympiad!</span>
+            </div>
+
             {/* CBSE Badge - Enhanced */}
             <div className="inline-block mb-6 px-6 py-3 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-md rounded-full border border-blue-300/40 shadow-lg">
               <span className="text-sm sm:text-base font-semibold text-blue-100">CBSE Affiliated School • Est. {schoolInfo.establishedYear}</span>
@@ -45,7 +61,7 @@ export default function HomePage() {
             
             {/* Primary Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 max-w-3xl mx-auto">
-              <Link href="/admissions/apply" className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-base sm:text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center min-w-[200px] group">
+              <Link href="/admissions" className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-base sm:text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center min-w-[200px] group">
                 <svg className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -172,11 +188,11 @@ export default function HomePage() {
               duration={10000}
             />
             <CounterStat
-              endValue={80}
-              suffix="%"
-              label="Confidence Increase"
-              colorClass="from-teal-50 to-teal-100"
-              iconClass="text-teal-600"
+              endValue={25}
+              suffix=""
+              label="Science Olympiad Gold Medals"
+              colorClass="from-yellow-50 to-orange-100"
+              iconClass="text-yellow-600"
               duration={10000}
             />
           </div>
@@ -279,50 +295,34 @@ export default function HomePage() {
       </section>
 
 
-      {/* Latest News & Events */}
+      {/* School Information Hub */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle centered subtitle="Stay updated with our latest announcements and activities">
-            Latest News & Events
+          <SectionTitle centered subtitle="Quick access to essential school information, services, and updates">
+            School Information Hub
           </SectionTitle>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
+            {/* Notice Board Card */}
             <Card hover className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 shadow-lg">
               <div className="h-32 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
                 <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                 </svg>
               </div>
               <CardBody className="px-4 py-4">
-                <div className="text-xs text-blue-700 font-semibold mb-1">Academic Year 2025-26</div>
-                <h3 className="text-base font-bold mb-2 text-blue-800">Admissions Open</h3>
+                <div className="text-xs text-blue-700 font-semibold mb-1">Updates & Announcements</div>
+                <h3 className="text-base font-bold mb-2 text-blue-800">Notice Board</h3>
                 <p className="text-blue-700 text-xs mb-3">
-                  New admissions for all classes are now open. Limited seats available.
+                  Stay updated with our latest school news, events, and important announcements.
                 </p>
-                <Link href="/admissions/apply" className="text-blue-600 font-medium text-xs hover:underline hover:text-blue-800 transition-colors">
-                  Apply Now →
+                <Link href="/notice-board" className="text-blue-600 font-medium text-xs hover:underline hover:text-blue-800 transition-colors">
+                  View All →
                 </Link>
               </CardBody>
             </Card>
 
-            <Card hover className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 shadow-lg">
-              <div className="h-32 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-              </div>
-              <CardBody className="px-4 py-4">
-                <div className="text-xs text-green-700 font-semibold mb-1">Results 2023-24</div>
-                <h3 className="text-base font-bold mb-2 text-green-800">100% Pass Percentage</h3>
-                <p className="text-green-700 text-xs mb-3">
-                  Congratulations to all students for achieving excellent results in board exams.
-                </p>
-                <Link href="/results-announcements" className="text-green-600 font-medium text-xs hover:underline hover:text-green-800 transition-colors">
-                  View Details →
-                </Link>
-              </CardBody>
-            </Card>
-
+            {/* Online Tuition Classes Card */}
             <Card hover className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 shadow-lg">
               <div className="h-32 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
                 <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,7 +336,83 @@ export default function HomePage() {
                   Expert online tutoring sessions for all subjects with personalized attention and flexible timings.
                 </p>
                 <Link href="/online-tuition" className="text-purple-600 font-medium text-xs hover:underline hover:text-purple-800 transition-colors">
-                  Learn More →
+                  Enroll Now →
+                </Link>
+              </CardBody>
+            </Card>
+
+            {/* Mandatory Disclosure Card */}
+            <Card hover className="bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 shadow-lg">
+              <div className="h-32 bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
+                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <CardBody className="px-4 py-4">
+                <div className="text-xs text-amber-700 font-semibold mb-1">Official Documents</div>
+                <h3 className="text-base font-bold mb-2 text-amber-800">Mandatory Disclosure</h3>
+                <p className="text-amber-700 text-xs mb-3">
+                  Access all mandatory disclosure documents, certificates, and school compliance information.
+                </p>
+                <Link href="/disclosure" className="text-amber-600 font-medium text-xs hover:underline hover:text-amber-800 transition-colors">
+                  View Documents →
+                </Link>
+              </CardBody>
+            </Card>
+
+            {/* Careers Card */}
+            <Card hover className="bg-gradient-to-br from-teal-50 to-teal-100 border border-teal-200 shadow-lg">
+              <div className="h-32 bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
+                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6" />
+                </svg>
+              </div>
+              <CardBody className="px-4 py-4">
+                <div className="text-xs text-teal-700 font-semibold mb-1">Join Our Team</div>
+                <h3 className="text-base font-bold mb-2 text-teal-800">Careers</h3>
+                <p className="text-teal-700 text-xs mb-3">
+                  Explore teaching and non-teaching job opportunities. Join our dedicated team of educators.
+                </p>
+                <Link href="/teachers#careers" className="text-teal-600 font-medium text-xs hover:underline hover:text-teal-800 transition-colors">
+                  Apply Now →
+                </Link>
+              </CardBody>
+            </Card>
+
+            {/* Latest Dress Code & Routine Card */}
+            <Card hover className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 shadow-lg">
+              <div className="h-32 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <CardBody className="px-4 py-4">
+                <div className="text-xs text-orange-700 font-semibold mb-1">Updated Guidelines</div>
+                <h3 className="text-base font-bold mb-2 text-orange-800">Latest Dress Code & Routine</h3>
+                <p className="text-orange-700 text-xs mb-3">
+                  Check out the updated school dress code, daily routine, and important guidelines for students.
+                </p>
+                <Link href="/about/discipline" className="text-orange-600 font-medium text-xs hover:underline hover:text-orange-800 transition-colors">
+                  View Guidelines →
+                </Link>
+              </CardBody>
+            </Card>
+
+            {/* Academics Card */}
+            <Card hover className="bg-gradient-to-br from-indigo-50 to-indigo-100 border border-indigo-200 shadow-lg">
+              <div className="h-32 bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <CardBody className="px-4 py-4">
+                <div className="text-xs text-indigo-700 font-semibold mb-1">CBSE Curriculum</div>
+                <h3 className="text-base font-bold mb-2 text-indigo-800">Academics</h3>
+                <p className="text-indigo-700 text-xs mb-3">
+                  Discover our comprehensive CBSE curriculum, academic calendar, and best practices in education.
+                </p>
+                <Link href="/academics" className="text-indigo-600 font-medium text-xs hover:underline hover:text-indigo-800 transition-colors">
+                  Explore →
                 </Link>
               </CardBody>
             </Card>
@@ -344,24 +420,62 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* The Confidence and Student-teacher Coordination at RSK */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-              <video 
-                className="w-full h-64 object-cover" 
-                controls
-              >
-                <source src="/schoolvideos/rsk public school dehri Sports teacher demostrating fitness with karate with kids in backgound.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="p-6 text-center">
-                <h4 className="text-xl font-bold text-gray-800 mb-2">The Confidence and Student-teacher Coordination at RSK</h4>
-                <p className="text-gray-600">Our sports teacher demonstrating karate and fitness with students learning discipline and strength</p>
+      {/* Recent Achievement Highlight */}
+      <section className="py-8 sm:py-10 lg:py-12 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-10 border border-white/50">
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-white rounded-full text-sm font-bold mb-4">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  LATEST ACHIEVEMENT
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                  🏆 Science Olympiad Champions!
+                </h2>
+                <p className="text-lg sm:text-xl text-gray-700 mb-6 max-w-4xl mx-auto">
+                  We're thrilled to announce that <strong>25 of our brilliant students</strong> have won <strong>Gold Medal of Excellence</strong> in the SOF National Science Olympiad, achieving top international rankings!
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div className="text-center p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl border border-yellow-200">
+                  <div className="text-3xl font-bold text-yellow-600 mb-2">25</div>
+                  <div className="text-sm font-semibold text-gray-700">Gold Medal Winners</div>
+                </div>
+                <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">100</div>
+                  <div className="text-sm font-semibold text-gray-700">Students Participated</div>
+                </div>
+                <div className="text-center p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
+                  <div className="text-3xl font-bold text-green-600 mb-2">7</div>
+                  <div className="text-sm font-semibold text-gray-700">Classes Represented</div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <p className="text-gray-600 mb-4">
+                  From Class 1 to Class 10, our students have made us proud with their dedication to science and learning. 
+                  The Director has announced special expert guidance programs for these achievers!
+                </p>
+                <Link href="/academics" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  View All Achievements
+                </Link>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* The Confidence and Student-teacher Coordination at RSK */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          
 
           {/* Student Activities Gallery */}
           <div className="mb-16">
@@ -448,7 +562,7 @@ export default function HomePage() {
             Start their journey with us today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button href="/admissions/apply" variant="secondary" size="lg" className="w-full sm:w-auto">
+            <Button href="/admissions" variant="secondary" size="lg" className="w-full sm:w-auto">
               Apply for Admission
             </Button>
             <Button href="/contact" variant="outline" size="lg" className="w-full sm:w-auto">
@@ -461,7 +575,7 @@ export default function HomePage() {
       {/* WhatsApp Floating CTA */}
       <div className="fixed bottom-6 right-6 z-50 group">
         <a
-          href="https://wa.me/919431234567?text=Hey%20RSK%2C%20I%20wanted%20to%20enquire"
+          href="https://wa.me/919631160967?text=Hey%20RSK%2C%20I%20wanted%20to%20enquire"
           target="_blank"
           rel="noopener noreferrer"
           className="relative flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 animate-pulse"

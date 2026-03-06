@@ -4,12 +4,12 @@ export const schoolInfo: SchoolInfo = {
   name: "RSK Public School",
   affiliationNo: "331083",
   schoolCode: "66831",
-  address: "BASTIPUR, DEHRI, BIHAR",
+  address: "BASTIPUR, DEHRI ON SONE, BIHAR",
   pinCode: "821305",
   principalName: "Mr. Raj Narayan Singh",
   principalQualification: "M.A., B.Ed.",
   email: "rskpublicschooldehri@gmail.com",
-  phone: "09911800967, 08210922434",
+  phone: "9631160967, 8210922434, 9934958096",
   establishedYear: "2007"
 };
 
@@ -19,34 +19,19 @@ export const navigationItems: NavItem[] = [
     href: "/"
   },
   {
-    label: "About",
-    href: "/about",
-    children: [
-      { label: "Director's Message", href: "/about/director" },
-      { label: "Principal's Message", href: "/about/principal" },
-      { label: "School Discipline", href: "/about/discipline" }
-    ]
-  },
-  {
-    label: "Admissions",
-    href: "/admissions",
-    children: [
-      { label: "Admission Process", href: "/admissions/process" },
-      { label: "Fee Structure", href: "/admissions/fees" },
-      { label: "Apply Online", href: "/admissions/apply" }
-    ]
+    label: "About Us",
+    href: "/about"
   },
   {
     label: "Academics",
-    href: "/academics",
-    children: [
-      { label: "Curriculum", href: "/academics/curriculum" },
-      { label: "Academic Calendar", href: "/academics/calendar" },
-      { label: "Best Practices", href: "/academics/practices" }
-    ]
+    href: "/academics"
   },
   {
-    label: "Infrastructure",
+    label: "Admission",
+    href: "/admissions"
+  },
+  {
+    label: "Facilities",
     href: "/infrastructure"
   },
   {
@@ -54,8 +39,8 @@ export const navigationItems: NavItem[] = [
     href: "/disclosure"
   },
   {
-    label: "Results & Announcements",
-    href: "/results-announcements"
+    label: "Notice Board",
+    href: "/notice-board"
   },
   {
     label: "Gallery",
@@ -66,25 +51,21 @@ export const navigationItems: NavItem[] = [
     ]
   },
   {
-    label: "Careers",
-    href: "/teachers#careers"
-  },
-  {
-    label: "Contact",
+    label: "Contact Us",
     href: "/contact"
   }
 ];
 
 export const infrastructureDetails: InfrastructureDetail[] = [
-  { label: "Total Campus Area", value: "2.5 acres" },
-  { label: "Number of Classrooms", value: "30 rooms (avg. 450 sq.ft each)" },
-  { label: "Science Laboratories", value: "3 labs (Physics, Chemistry, Biology)" },
-  { label: "Computer Labs", value: "2 labs with 60+ computers" },
+  { label: "Total Campus Area", value: "2 acres" },
+  { label: "Number of Classrooms", value: "30+ rooms (avg. 450 sq.ft each)" },
+  { label: "Science Laboratories", value: "1 lab (Multi-purpose)" },
+  { label: "Computer Labs", value: "1 lab with modern computers" },
   { label: "Library", value: "1000+ books, Reading room capacity: 50" },
   { label: "Playground", value: "Multi-purpose sports ground" },
-  { label: "Audio-Visual Room", value: "1 smart classroom" },
-  { label: "Girls' Toilets", value: "12 units" },
-  { label: "Boys' Toilets", value: "12 units" }
+  { label: "Smart Classroom", value: "1 smart classroom with digital boards" },
+  { label: "Girls' Toilets", value: "10+ separate units" },
+  { label: "Boys' Toilets", value: "10+ separate units" }
 ];
 
 export const mandatoryDocuments: DocumentItem[] = [
@@ -238,6 +219,6 @@ export const quickLinks = [
   { label: "CBSE Official", url: "https://cbse.gov.in" },
   { label: "Admission Enquiry", url: "/admissions/apply" },
   { label: "Fee Payment", url: "/admissions/fees" },
-  { label: "Results & Announcements", url: "/results-announcements" }
+  { label: "Notice Board", url: "/notice-board" }
 ];
 
