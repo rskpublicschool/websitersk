@@ -1,16 +1,79 @@
-import { Metadata } from 'next';
+'use client';
+
+import { useState } from 'react';
 import SectionTitle from '@/app/components/SectionTitle';
 import { Card, CardBody, CardHeader } from '@/app/components/Card';
 import Button from '@/app/components/Button';
 import { schoolInfo } from '@/app/lib/schoolData';
 import QuickContactSection from './QuickContactSection';
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description: `Get in touch with ${schoolInfo.name}. Contact details, location, and enquiry form for admissions and general queries.`,
+// NOTE: Metadata export removed because this is now a Client Component.
+// Move metadata to a separate layout.tsx or keep a server wrapper if needed.
+
+const APPS_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbyE-tLhZAjWSY0aCKkbMp7fTxD4ffPSUGBAi8_6ksRDDjXdKoAj3QI-zE3TtZlsPM2D/exec';
+
+type FormState = {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+  consent: boolean;
+};
+
+const initialForm: FormState = {
+  name: '',
+  email: '',
+  phone: '',
+  subject: '',
+  message: '',
+  consent: false,
 };
 
 export default function ContactPage() {
+  const [form, setForm] = useState<FormState>(initialForm);
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value, type } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('loading');
+    setErrorMsg('');
+
+    try {
+      const formData = new FormData();
+      formData.append('name', form.name);
+      formData.append('email', form.email);
+      formData.append('phone', form.phone);
+      formData.append('subject', form.subject);
+      formData.append('message', form.message);
+    
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData,
+      });
+    
+      setStatus('success');
+      setForm(initialForm);
+    } catch (err) {
+      console.error('Form submission error:', err);
+      setStatus('error');
+      setErrorMsg('Something went wrong. Please try again or contact us directly.');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4">
@@ -114,119 +177,168 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div id="contact-form">
                 <Card>
-                <CardHeader>
-                  <h3 className="text-2xl font-bold text-gray-900">Send us a Message</h3>
-                  <p className="text-gray-600 mt-1">Fill out the form below and we'll get back to you soon</p>
-                </CardHeader>
-                <CardBody>
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
+                  <CardHeader>
+                    <h3 className="text-2xl font-bold text-gray-900">Send us a Message</h3>
+                    <p className="text-gray-600 mt-1">Fill out the form below and we'll get back to you soon</p>
+                  </CardHeader>
+                  <CardBody>
+                    {/* Success banner */}
+                    {status === 'success' && (
+                      <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
+                        <svg className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        <div>
+                          <p className="text-green-800 font-medium">Message sent successfully!</p>
+                          <p className="text-green-700 text-sm mt-0.5">We'll get back to you within 24–48 hours.</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Error banner */}
+                    {status === 'error' && (
+                      <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
+                        <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <p className="text-red-700 text-sm">{errorMsg}</p>
+                      </div>
+                    )}
+
+                    <form className="space-y-6" onSubmit={handleSubmit}>
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700 mb-2">
+                            Full Name *
+                          </label>
+                          <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            required
+                            value={form.name}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                            placeholder="Enter your name"
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                            Email Address *
+                          </label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            value={form.email}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                            placeholder="your.email@example.com"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                            Phone Number *
+                          </label>
+                          <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                            value={form.phone}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                            placeholder="+91 98765 43210"
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                            Subject *
+                          </label>
+                          <select
+                            id="subject"
+                            name="subject"
+                            required
+                            value={form.subject}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                          >
+                            <option value="">Select a subject</option>
+                            <option value="admission">Admission Enquiry</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="academic">Academic Information</option>
+                            <option value="infrastructure">Infrastructure &amp; Facilities</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                          Full Name *
+                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                          Message *
                         </label>
-                        <input
-                          type="text"
-                          id="contact-name"
-                          name="name"
+                        <textarea
+                          id="message"
+                          name="message"
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                          placeholder="Enter your name"
+                          rows={6}
+                          value={form.message}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none"
+                          placeholder="Tell us more about your enquiry..."
                         />
                       </div>
-                      <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                          Email Address *
-                        </label>
+
+                      <div className="flex items-start gap-3">
                         <input
-                          type="email"
-                          id="email"
-                          name="email"
+                          type="checkbox"
+                          id="consent"
+                          name="consent"
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                          placeholder="your.email@example.com"
+                          checked={form.consent}
+                          onChange={handleChange}
+                          className="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600"
                         />
-                      </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                          Phone Number *
+                        <label htmlFor="consent" className="text-sm text-gray-700">
+                          I agree to the collection and processing of my personal data for the purpose of responding to my enquiry.
                         </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                          placeholder="+91 98765 43210"
-                        />
                       </div>
-                      <div>
-                        <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                          Subject *
-                        </label>
-                        <select
-                          id="subject"
-                          name="subject"
-                          required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
-                        >
-                          <option value="">Select a subject</option>
-                          <option value="admission">Admission Enquiry</option>
-                          <option value="general">General Enquiry</option>
-                          <option value="academic">Academic Information</option>
-                          <option value="infrastructure">Infrastructure & Facilities</option>
-                          <option value="other">Other</option>
-                        </select>
+
+                      <div className={status === 'loading' ? 'opacity-60 pointer-events-none w-full md:w-auto' : 'w-full md:w-auto'}>
+                        <Button type="submit" variant="primary" size="lg" className="w-full md:w-auto">
+                          {status === 'loading' ? (
+                            <>
+                              <svg className="w-5 h-5 mr-2 animate-spin" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                              </svg>
+                              Sending...
+                            </>
+                          ) : (
+                            <>
+                              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                              Send Message
+                            </>
+                          )}
+                        </Button>
                       </div>
+                    </form>
+
+                    {/* Note */}
+                    <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                      <p className="text-sm text-gray-700">
+                        <strong>Note:</strong> For urgent matters, please call us directly at {schoolInfo.phone}.
+                        We typically respond to enquiries within 24-48 hours during working days.
+                      </p>
                     </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                        Message *
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        required
-                        rows={6}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none"
-                        placeholder="Tell us more about your enquiry..."
-                      />
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <input
-                        type="checkbox"
-                        id="consent"
-                        name="consent"
-                        required
-                        className="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-600"
-                      />
-                      <label htmlFor="consent" className="text-sm text-gray-700">
-                        I agree to the collection and processing of my personal data for the purpose of responding to my enquiry.
-                      </label>
-                    </div>
-
-                    <Button type="submit" variant="primary" size="lg" className="w-full md:w-auto">
-                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                      Send Message
-                    </Button>
-                  </form>
-
-                  {/* Note */}
-                  <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
-                    <p className="text-sm text-gray-700">
-                      <strong>Note:</strong> For urgent matters, please call us directly at {schoolInfo.phone}. 
-                      We typically respond to enquiries within 24-48 hours during working days.
-                    </p>
-                  </div>
-                </CardBody>
-              </Card>
+                  </CardBody>
+                </Card>
               </div>
 
               {/* Map */}
@@ -277,4 +389,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
