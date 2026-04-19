@@ -199,6 +199,128 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Our Board Achievers Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-200/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-white rounded-full text-sm font-bold mb-4 animate-pulse">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              CBSE BOARD EXCELLENCE
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              🎓 Our Board Achievers
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              We are thrilled to announce our CBSE Board toppers! These exceptional students have scored outstanding percentages in the CBSE Board examinations 2026 for both 10th and 12th standards, making us proud with their dedication and excellence.
+            </p>
+          </div>
+
+          {/* Achievement Image */}
+          <div className="mb-12 flex justify-center">
+            <div className="relative max-w-4xl w-full">
+              <img 
+                src="/achievements/schooltoppers_and_achievers_image_with_principal_group_rsk_public_school_bastipur_dehri.jpeg" 
+                alt="CBSE Board toppers and achievers with principal at RSK Public School celebration"
+                className="w-full rounded-2xl shadow-2xl border-8 border-white"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-center">
+                <div className="bg-white/90 backdrop-blur-md rounded-lg p-3 inline-block">
+                  <p className="text-sm font-semibold text-gray-800">
+                    🏆 Celebrating Excellence - Our Board Toppers celebration.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Student Testimonial Videos */}
+          <div className="mb-8">
+            <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8">
+              Hear From Our Toppers
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              
+              {/* Boy Topper Video */}
+              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-4 border-blue-100">
+                <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                  <video 
+                    controls 
+                    poster="/achievements/boy_topper_poster.jpg"
+                    className="w-full h-full object-cover"
+                    preload="metadata"
+                  >
+                    <source src="https://drive.google.com/uc?export=download&id=1KaTypVzpHC_GCQMapeojRrJDRBa2Q6L3" type="video/mp4" />
+                    <source src="/achievements/boy_topper_74.08_percent_testimonial_video_rsk_public_school_bastipur_dehri.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      74.08% - Class 10th
+                    </div>
+                    <div className="text-blue-600 text-2xl">🏆</div>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Board Topper Testimonial</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Listen to our outstanding Class 10th topper share his journey to success and how RSK Public School shaped his academic excellence.
+                  </p>
+                </div>
+              </div>
+
+              {/* Girl Topper Video */}
+              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-4 border-pink-100">
+                <div className="aspect-video bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center">
+                  <video 
+                    controls 
+                    poster="/achievements/girl_topper_poster.jpg"
+                    className="w-full h-full object-cover"
+                    preload="metadata"
+                  >
+                    <source src="https://drive.google.com/uc?export=download&id=1HZgQEmJbJrmNW2P6o7zrJ3bYGPU7GI7w" type="video/mp4" />
+                    <source src="/achievements/girl_topper_93_percent_video_rsk_public_school_bastipur_dehri.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      93% - Class 12th
+                    </div>
+                    <div className="text-pink-600 text-2xl">🏆</div>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Board Topper Testimonial</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Hear from our brilliant Class 12th topper about her incredible achievement and the supportive environment at RSK Public School.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center">
+            <p className="text-gray-700 text-lg mb-6 max-w-3xl mx-auto">
+              Join the ranks of our successful students! With dedicated faculty, comprehensive curriculum, and personalized attention, we nurture each student to achieve their full potential.
+            </p>
+            <Link href="/admissions" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+              <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Apply for Admission
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
