@@ -72,10 +72,10 @@ export const mandatoryDocuments: DocumentItem[] = [
   // Academic Certificates
   {
     id: "1",
-    title: "10+2 Level Certificate",
+    title: "Affiliation Letter for Senior Secondary",
     category: "Academic Certificates",
-    fileUrl: "/certificates/10+2 level certificate RSK public school best school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/AFFILIATION LETTER FOR SENIOR SECONDARY.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "2",
@@ -86,33 +86,33 @@ export const mandatoryDocuments: DocumentItem[] = [
   },
   {
     id: "3",
-    title: "NOC Certificate by CBSE",
+    title: "NOC Certificate",
     category: "Academic Certificates",
-    fileUrl: "/certificates/noc certificate by cbse RSK public school top 10 school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/NOC_compressed.pdf",
+    updatedAt: "2026-05-19"
   },
 
   // Legal & Trust Documents
   {
     id: "4",
-    title: "Trust Deed",
+    title: "Ramjag Singh Trust Deed",
     category: "Legal & Trust Documents",
-    fileUrl: "/certificates/Trust deed RSK public school best school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/RAMJAG SINGH TRUST DEED_compressed.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "5",
-    title: "Affidavit by Managing Committee",
+    title: "Affidavit by Trust",
     category: "Legal & Trust Documents",
-    fileUrl: "/certificates/affdavit by managing committee RSK public school top cbse school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/Affidavit by trust.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "6",
-    title: "Affidavit Membership of the Trust",
+    title: "Self Declaration Document",
     category: "Legal & Trust Documents",
-    fileUrl: "/certificates/affdavit membership of the trust RSK public school top 10 school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/SELF DECLARATION DOCUMENT.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "7",
@@ -121,31 +121,24 @@ export const mandatoryDocuments: DocumentItem[] = [
     fileUrl: "/certificates/affdavit to run school under IT RSK public school best school in dehri.pdf",
     updatedAt: "2026-02-14"
   },
-  {
-    id: "8",
-    title: "Self Certificate Performa",
-    category: "Legal & Trust Documents",
-    fileUrl: "/certificates/self cert performa RSK public school top 10 school in dehri.pdf",
-    updatedAt: "2026-02-14"
-  },
 
   // Property & Infrastructure
   {
-    id: "9",
-    title: "Certificate of Land",
+    id: "8",
+    title: "Land Certificate",
     category: "Property & Infrastructure",
-    fileUrl: "/certificates/certificate of land RSK public school top cbse school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/LAND CERTIFICATE.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "9",
+    title: "Ramjag Singh Lease Deed",
+    category: "Property & Infrastructure",
+    fileUrl: "/mandatorydisclosures/RAMJAG SINGH LEASE DEED_compressed.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "10",
-    title: "Lease Deed",
-    category: "Property & Infrastructure",
-    fileUrl: "/certificates/lease deed RSK public school top cbse school in dehri.pdf",
-    updatedAt: "2026-02-14"
-  },
-  {
-    id: "11",
     title: "Details of Infrastructure",
     category: "Property & Infrastructure",
     fileUrl: "/certificates/Details of infrastructure RSK public school top 10 school in dehri.pdf",
@@ -154,51 +147,65 @@ export const mandatoryDocuments: DocumentItem[] = [
 
   // Safety & Security Certificates
   {
-    id: "12",
+    id: "11",
     title: "Building Safety Certificate",
     category: "Safety & Security",
-    fileUrl: "/certificates/building safety cert RSK public school best school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/BUILDING SAFETY CERTIFICATE.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "12",
+    title: "Fire Safety Certificate",
+    category: "Safety & Security",
+    fileUrl: "/mandatorydisclosures/FIRE SAFETY CERTIFICATE.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "13",
-    title: "Fire Safety Certificate",
+    title: "Drinking Water and Sanitation Certificate",
     category: "Safety & Security",
-    fileUrl: "/certificates/Fire safety certificate RSK public school top cbse school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/DRINKING WATER AND SANITATION CERTIFICATE.pdf",
+    updatedAt: "2026-05-19"
   },
   {
     id: "14",
-    title: "Drinking Water Certificate",
+    title: "Drinking Water Sample Report",
     category: "Safety & Security",
-    fileUrl: "/certificates/drinking water cert RSK public school best school in dehri.pdf",
-    updatedAt: "2026-02-14"
+    fileUrl: "/mandatorydisclosures/DRINKING WATER SAMPLE REPORT.pdf",
+    updatedAt: "2026-05-19"
   },
 
   // Financial Documents
   {
     id: "15",
+    title: "Fee Structure 2026-27",
+    category: "Financial Documents",
+    fileUrl: "/mandatorydisclosures/FEE STRUCTURE 2026-27.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "16",
     title: "School FD Document",
     category: "Financial Documents",
     fileUrl: "/certificates/school fd document RSK public school top cbse school in dehri.pdf",
     updatedAt: "2026-02-14"
   },
   {
-    id: "16",
+    id: "17",
     title: "Income Tax Return by Trust",
     category: "Financial Documents",
     fileUrl: "/certificates/Income tax return by trust RSK public school best school in dehri.pdf",
     updatedAt: "2026-02-14"
   },
   {
-    id: "17",
+    id: "18",
     title: "Audit Report",
     category: "Financial Documents",
     fileUrl: "/certificates/Audit report RSK public school top 10 school in dehri.pdf",
     updatedAt: "2026-02-14"
   },
   {
-    id: "18",
+    id: "19",
     title: "Audit Report (Last 3 Years)",
     category: "Financial Documents",
     fileUrl: "/certificates/AUDIT REPORT LAST 3 YEARS RSK public school top cbse school in dehri.pdf",
@@ -207,7 +214,21 @@ export const mandatoryDocuments: DocumentItem[] = [
 
   // Governance & Compliance
   {
-    id: "19",
+    id: "20",
+    title: "School Management Committee",
+    category: "Governance & Compliance",
+    fileUrl: "/mandatorydisclosures/SCHOOL MANAGEMENT COMMITTEE.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "21",
+    title: "Parents Teachers Association",
+    category: "Governance & Compliance",
+    fileUrl: "/mandatorydisclosures/PARENTS TEACHERS ASSOCIATION.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "22",
     title: "IC Recommendation",
     category: "Governance & Compliance",
     fileUrl: "/certificates/IC recommendation RSK public school top 10 school in dehri.pdf",
