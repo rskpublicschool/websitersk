@@ -91,6 +91,20 @@ export const mandatoryDocuments: DocumentItem[] = [
     fileUrl: "/mandatorydisclosures/NOC_compressed.pdf",
     updatedAt: "2026-05-19"
   },
+  {
+    id: "23",
+    title: "RTE (Right to Education)",
+    category: "Academic Certificates",
+    fileUrl: "/mandatorydisclosures/RTE QR.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "24",
+    title: "Annual Academic Calendar 2026-27",
+    category: "Academic Certificates",
+    fileUrl: "/mandatorydisclosures/ANNUAL ACADEMIC CALENDER 2026-27.pdf",
+    updatedAt: "2026-05-19"
+  },
 
   // Legal & Trust Documents
   {
