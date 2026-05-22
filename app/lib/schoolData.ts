@@ -105,6 +105,13 @@ export const mandatoryDocuments: DocumentItem[] = [
     fileUrl: "/mandatorydisclosures/ANNUAL ACADEMIC CALENDER 2026-27.pdf",
     updatedAt: "2026-05-19"
   },
+  {
+    id: "27",
+    title: "CBSE Mandatory Disclosure (Official)",
+    category: "Academic Certificates",
+    fileUrl: "/mandatorydisclosures/CBSE Mandatory disclosure official.pdf",
+    updatedAt: "2026-05-19"
+  },
 
   // Legal & Trust Documents
   {
@@ -119,6 +126,13 @@ export const mandatoryDocuments: DocumentItem[] = [
     title: "Affidavit by Trust",
     category: "Legal & Trust Documents",
     fileUrl: "/mandatorydisclosures/Affidavit by trust.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "25",
+    title: "Affidavit",
+    category: "Legal & Trust Documents",
+    fileUrl: "/mandatorydisclosures/AFFIDAVIT.pdf",
     updatedAt: "2026-05-19"
   },
   {
@@ -239,6 +253,13 @@ export const mandatoryDocuments: DocumentItem[] = [
     title: "Parents Teachers Association",
     category: "Governance & Compliance",
     fileUrl: "/mandatorydisclosures/PARENTS TEACHERS ASSOCIATION.pdf",
+    updatedAt: "2026-05-19"
+  },
+  {
+    id: "26",
+    title: "Prevention of Sexual Harassment Committee",
+    category: "Governance & Compliance",
+    fileUrl: "/mandatorydisclosures/Prevention of Sexual Harassment Committee.pdf",
     updatedAt: "2026-05-19"
   },
   {
