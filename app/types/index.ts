@@ -4,6 +4,7 @@ export interface SchoolInfo {
   schoolCode: string;
   address: string;
   pinCode: string;
+  directorName: string;
   principalName: string;
   principalQualification: string;
   email: string;

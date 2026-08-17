@@ -4,6 +4,8 @@ import SectionTitle from './components/SectionTitle';
 import { Card, CardBody } from './components/Card';
 import CounterStat from './components/CounterStat';
 import VisitorCounterRobust from './components/VisitorCounterRobust';
+import AdmissionPopup from './components/AdmissionPopup';
+import ChatbotWidget from './components/ChatbotWidget';
 import { schoolInfo } from './lib/schoolData';
 import { Metadata } from 'next';
 
@@ -20,6 +22,8 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <AdmissionPopup />
+      <ChatbotWidget />
       {/* Hero Section */}
       <section id="hero" className="relative text-white overflow-hidden min-h-screen">
         {/* Hero Background Image */}
@@ -245,15 +249,15 @@ export default function HomePage() {
             <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8">
               Hear From Our Toppers
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto justify-items-center">
               
               {/* Boy Topper Video */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-4 border-blue-100">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-4 border-blue-100 w-full max-w-[300px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
                   <video 
                     controls 
                     poster="/achievements/boy_topper_poster.jpg"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-black"
                     preload="metadata"
                   >
                     <source src="https://drive.google.com/uc?export=download&id=1KaTypVzpHC_GCQMapeojRrJDRBa2Q6L3" type="video/mp4" />
@@ -261,27 +265,27 @@ export default function HomePage() {
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <div className="p-6">
+                <div className="p-5">
                   <div className="flex items-center justify-between mb-3">
-                    <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                    <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
                       74.08% - Class 10th
                     </div>
-                    <div className="text-blue-600 text-2xl">🏆</div>
+                    <div className="text-blue-600 text-xl">🏆</div>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-2">Board Topper Testimonial</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Listen to our outstanding Class 10th topper share his journey to success and how RSK Public School shaped his academic excellence.
+                  <h4 className="text-base font-bold text-gray-900 mb-2">Board Topper Testimonial</h4>
+                  <p className="text-gray-600 text-xs leading-relaxed">
+                    Listen to our Class 10th topper share his journey to success at RSK Public School.
                   </p>
                 </div>
               </div>
 
               {/* Girl Topper Video */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-4 border-pink-100">
-                <div className="aspect-video bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center">
+              <div className="bg-white rounded-xl shadow-xl overflow-hidden border-4 border-pink-100 w-full max-w-[300px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
                   <video 
                     controls 
                     poster="/achievements/girl_topper_poster.jpg"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-black"
                     preload="metadata"
                   >
                     <source src="https://drive.google.com/uc?export=download&id=1HZgQEmJbJrmNW2P6o7zrJ3bYGPU7GI7w" type="video/mp4" />
@@ -289,16 +293,16 @@ export default function HomePage() {
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <div className="p-6">
+                <div className="p-5">
                   <div className="flex items-center justify-between mb-3">
-                    <div className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                    <div className="bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold">
                       93% - Class 12th
                     </div>
-                    <div className="text-pink-600 text-2xl">🏆</div>
+                    <div className="text-pink-600 text-xl">🏆</div>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-2">Board Topper Testimonial</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Hear from our brilliant Class 12th topper about her incredible achievement and the supportive environment at RSK Public School.
+                  <h4 className="text-base font-bold text-gray-900 mb-2">Board Topper Testimonial</h4>
+                  <p className="text-gray-600 text-xs leading-relaxed">
+                    Hear from our Class 12th topper about her achievement at RSK Public School.
                   </p>
                 </div>
               </div>

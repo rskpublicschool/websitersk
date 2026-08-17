@@ -106,7 +106,7 @@ export default function RootLayout({
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": schoolInfo.address,
-                "addressLocality": "Dehri on Sone",
+                "addressLocality": "Dehri",
                 "addressRegion": "Bihar",
                 "postalCode": schoolInfo.pinCode,
                 "addressCountry": "IN"

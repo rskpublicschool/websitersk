@@ -24,16 +24,15 @@ export default function DirectorPage() {
                   <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
                     <Image
                       src="/director RSK top school in dehri rohtas.jpg"
-                      alt="Mr. Anand Singh - Director of RSK Public School"
+                      alt="Shri Anand Singh - Director of RSK Public School"
                       fill
                       className="object-cover"
                       priority
                     />
                   </div>
                   <div className="text-center mt-4">
-                    <h3 className="text-xl font-bold text-gray-900">Mr. Anand Singh</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Shri Anand Singh</h3>
                     <p className="text-gray-600">Director</p>
-                    <p className="text-sm text-gray-500 mt-1">M.A., B.Ed.</p>
                   </div>
                 </div>
 

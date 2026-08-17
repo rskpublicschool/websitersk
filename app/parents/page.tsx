@@ -91,7 +91,7 @@ export default function ParentsPage() {
                   <img 
                     src="/experienceimages/cbse school in dehri on sone RSK public school academic success.jpeg" 
                     alt="Students achieving academic success and 100% results at RSK"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-44 object-contain bg-blue-50/80 rounded-lg mb-4 p-1"
                   />
                 </div>
                 <div className="text-center">
@@ -114,7 +114,7 @@ export default function ParentsPage() {
                   <img 
                     src="/student-performance-dashboard.svg" 
                     alt="Modern student performance tracking dashboard showing grades, attendance, and progress analytics"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-44 object-contain bg-green-50/80 rounded-lg mb-4 p-1"
                   />
                 </div>
                 <div className="text-center">
@@ -137,7 +137,7 @@ export default function ParentsPage() {
                   <img 
                     src="/activitiesandevent/rsk public school dehri annuals day celebration.jpg" 
                     alt="Students participating in holistic development activities at RSK annual day"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-44 object-contain bg-purple-50/80 rounded-lg mb-4 p-1"
                   />
                 </div>
                 <div className="text-center">
@@ -160,7 +160,7 @@ export default function ParentsPage() {
                   <img 
                     src="/experienceimages/safe transport rsk public school dehri on sone best cbse school in dehri on sone.png" 
                     alt="Safe and secure transport system ensuring student safety at RSK"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-44 object-contain bg-amber-50/80 rounded-lg mb-4 p-1"
                   />
                 </div>
                 <div className="text-center">
@@ -183,7 +183,7 @@ export default function ParentsPage() {
                   <img 
                     src="/experienceimages/cbse school in dehri on sone RSK public school dehri on sone ptm.jpg" 
                     alt="Parent-teacher meeting at RSK Public School Dehri"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-44 object-contain bg-rose-50/80 rounded-lg mb-4 p-1"
                   />
                 </div>
                 <div className="text-center">
@@ -206,7 +206,7 @@ export default function ParentsPage() {
                   <img 
                     src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
                     alt="CBSE excellence and modern teaching methods at RSK Public School"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-44 object-contain bg-indigo-50/80 rounded-lg mb-4 p-1"
                   />
                 </div>
                 <div className="text-center">
@@ -233,20 +233,22 @@ export default function ParentsPage() {
             Our Teachers in Action
           </SectionTitle>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
             {/* Director Video */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl">
-              <video 
-                className="w-full h-48 object-cover" 
-                controls
-                key="director-video"
-              >
-                <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl w-full max-w-[280px]">
+              <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                <video 
+                  className="w-full h-full object-contain bg-black" 
+                  controls
+                  key="director-video"
+                >
+                  <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div className="p-4">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
@@ -263,18 +265,20 @@ export default function ParentsPage() {
             </div>
 
             {/* Principal Video */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl">
-              <video 
-                className="w-full h-48 object-cover" 
-                controls
-                key="principal-video"
-              >
-                <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl w-full max-w-[280px]">
+              <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                <video 
+                  className="w-full h-full object-contain bg-black" 
+                  controls
+                  key="principal-video"
+                >
+                  <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div className="p-4">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
@@ -291,17 +295,19 @@ export default function ParentsPage() {
             </div>
 
             {/* Female Teacher Video */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl">
-              <video 
-                className="w-full h-48 object-cover" 
-                controls
-              >
-                <source src="/schoolvideos/rsk public school dehri female teacher feedback and management feedback.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl w-full max-w-[280px]">
+              <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                <video 
+                  className="w-full h-full object-contain bg-black" 
+                  controls
+                >
+                  <source src="/schoolvideos/rsk public school dehri female teacher feedback and management feedback.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div className="p-4">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
@@ -318,17 +324,19 @@ export default function ParentsPage() {
             </div>
 
             {/* Sports Teacher Video */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl">
-              <video 
-                className="w-full h-48 object-cover" 
-                controls
-              >
-                <source src="/schoolvideos/rsk public school dehri Sports teacher demostrating fitness with karate with kids in backgound.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl w-full max-w-[280px]">
+              <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                <video 
+                  className="w-full h-full object-contain bg-black" 
+                  controls
+                >
+                  <source src="/schoolvideos/rsk public school dehri Sports teacher demostrating fitness with karate with kids in backgound.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div className="p-4">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -345,17 +353,19 @@ export default function ParentsPage() {
             </div>
 
             {/* Science Teacher Video */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl">
-              <video 
-                className="w-full h-48 object-cover" 
-                controls
-              >
-                <source src="/schoolvideos/rsk public school dehri Kushal Sir science teacher feedback and management feedback.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-xl w-full max-w-[280px]">
+              <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                <video 
+                  className="w-full h-full object-contain bg-black" 
+                  controls
+                >
+                  <source src="/schoolvideos/rsk public school dehri Kushal Sir science teacher feedback and management feedback.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div className="p-4">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z" />
                     </svg>
@@ -454,44 +464,44 @@ export default function ParentsPage() {
           {/* Student Achievement Showcase */}
           <div className="mb-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg group bg-slate-950">
                 <img 
                   src="/schoolimages/rsk public school dehri students performance song.jpeg" 
                   alt="RSK students showcasing musical talents and confidence"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-52 object-contain p-1 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Musical Excellence</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-2 left-2 text-white text-xs sm:text-sm font-medium drop-shadow-md">Musical Excellence</div>
               </div>
               
-              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg group bg-slate-950">
                 <img 
                   src="/activitiesandevent/rsk public school dehri science fair innovation.jpg" 
                   alt="RSK students winning at science fair with innovative projects"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-52 object-contain p-1 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Science Champions</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-2 left-2 text-white text-xs sm:text-sm font-medium drop-shadow-md">Science Champions</div>
               </div>
               
-              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg group bg-slate-950">
                 <img 
                   src="/activitiesandevent/rsk public school dehri sports day celebration.jpg" 
                   alt="RSK students celebrating victories in sports competitions"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-52 object-contain p-1 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Sports Excellence</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-2 left-2 text-white text-xs sm:text-sm font-medium drop-shadow-md">Sports Excellence</div>
               </div>
               
-              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg group bg-slate-950">
                 <img 
                   src="/activitiesandevent/rsk public school dehri inter school competitions.jpg" 
                   alt="RSK students representing school in inter-school competitions"
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-52 object-contain p-1 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">Competition Winners</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-2 left-2 text-white text-xs sm:text-sm font-medium drop-shadow-md">Competition Winners</div>
               </div>
             </div>
           </div>
@@ -530,12 +540,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Success Story 1 - Academic Excellence */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img 
-                  src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
-                  alt="Student demonstrating academic excellence at RSK"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/experienceimages/cbse school in dehri on sone RSK public school academic excellence.jpeg" 
+                    alt="Student demonstrating academic excellence at RSK"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center mb-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
@@ -555,12 +567,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Success Story 2 - Sports Achievement */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img 
-                  src="/schoolimages/rsk public school dehri students NCC cadet stunt girls and boys (1).jpeg" 
-                  alt="NCC cadet demonstrating discipline and leadership"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/schoolimages/rsk public school dehri students NCC cadet stunt girls and boys (1).jpeg" 
+                    alt="NCC cadet demonstrating discipline and leadership"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center mb-3">
                     <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
@@ -580,12 +594,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Success Story 3 - Creative Excellence */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img 
-                  src="/schoolimages/rsk public school dehri kids dance.jpeg" 
-                  alt="Student performing in cultural program"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/schoolimages/rsk public school dehri kids dance.jpeg" 
+                    alt="Student performing in cultural program"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center mb-3">
                     <div className="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
@@ -605,12 +621,14 @@ export default function ParentsPage() {
               </div>
               
               {/* Success Story 4 - Communication Skills */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img 
-                  src="/schoolimages/rsk public school dehri kids parate 26th jan.jpeg" 
-                  alt="Student confidently leading Republic Day parade"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/schoolimages/rsk public school dehri kids parate 26th jan.jpeg" 
+                    alt="Student confidently leading Republic Day parade"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center mb-3">
                     <div className="w-3 h-3 bg-amber-500 rounded-full mr-3"></div>
@@ -630,12 +648,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Success Story 5 - Academic Transformation */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img 
-                  src="/experienceimages/cbse school in dehri on sone RSK public school dehri student performance report.jpeg" 
-                  alt="Student performance evaluation and progress tracking at RSK"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/experienceimages/cbse school in dehri on sone RSK public school dehri student performance report.jpeg" 
+                    alt="Student performance evaluation and progress tracking at RSK"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center mb-3">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
@@ -1045,43 +1065,52 @@ export default function ParentsPage() {
           {/* Parent Video Testimonials */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Parent Video Testimonials</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri parent feedback female with kids.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
+              <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg border border-gray-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/schoolvideos/rsk public school dehri parent feedback female with kids.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800">Parent Feedback</h4>
                   <p className="text-sm text-gray-600">"Why we chose RSK for our children"</p>
                 </div>
               </div>
               
-              <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri parent feedback male with kids very satisfied.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg border border-gray-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/schoolvideos/rsk public school dehri parent feedback male with kids very satisfied.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800">Satisfied Parent</h4>
                   <p className="text-sm text-gray-600">"Very satisfied with our child's progress at RSK"</p>
                 </div>
               </div>
               
-              <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri parent feedback 2 female with kids about school and managment.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg border border-gray-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/schoolvideos/rsk public school dehri parent feedback 2 female with kids about school and managment.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800">Parents Share Their Experience</h4>
                   <p className="text-sm text-gray-600">"About school quality and management"</p>
@@ -1096,68 +1125,77 @@ export default function ParentsPage() {
             <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
               Hear directly from our students about their journey of growth, discipline, and success at RSK Public School
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
               
-              <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-lg border border-orange-200">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri karate student saying boy.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-lg border border-orange-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/schoolvideos/rsk public school dehri karate student saying boy.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                    <h4 className="font-semibold text-gray-800">Karate Student - Body Mind Connection</h4>
+                    <h4 className="font-semibold text-gray-800 text-sm">Karate Student</h4>
                   </div>
-                  <p className="text-sm text-gray-600">"Hum khelte hain, seekhte hain, jeette hain!" - Learning discipline through martial arts</p>
+                  <p className="text-xs text-gray-600">"Hum khelte hain, seekhte hain, jeette hain!" - Learning discipline through martial arts</p>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl overflow-hidden shadow-lg border border-pink-200">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri karate student saying girl.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl overflow-hidden shadow-lg border border-pink-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/schoolvideos/rsk public school dehri karate student saying girl.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                       </svg>
                     </div>
-                    <h4 className="font-semibold text-gray-800">Confident Student - Self Defense</h4>
+                    <h4 className="font-semibold text-gray-800 text-sm">Confident Student</h4>
                   </div>
-                  <p className="text-sm text-gray-600">Building confidence, strength, and character through karate training at RSK</p>
+                  <p className="text-xs text-gray-600">Building confidence, strength, and character through karate training at RSK</p>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-100 to-violet-100 rounded-xl overflow-hidden shadow-lg border border-purple-200">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri karate student saying girl 2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gradient-to-br from-purple-100 to-violet-100 rounded-xl overflow-hidden shadow-lg border border-purple-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-950 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/schoolvideos/rsk public school dehri karate student saying girl 2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                       </svg>
                     </div>
-                    <h4 className="font-semibold text-gray-800">Empowered Student - Leadership</h4>
+                    <h4 className="font-semibold text-gray-800 text-sm">Empowered Student</h4>
                   </div>
-                  <p className="text-sm text-gray-600">Mind-body balance and leadership skills through dedicated martial arts practice</p>
+                  <p className="text-xs text-gray-600">Mind-body balance and leadership skills through dedicated martial arts practice</p>
                 </div>
               </div>
 
@@ -1170,12 +1208,14 @@ export default function ParentsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               
               {/* Model Exhibition Activities */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/schoolimages/rsk public school dehri food stall students model exhibition.jpeg" 
-                  alt="Students showcasing their creative projects at model exhibition"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/schoolimages/rsk public school dehri food stall students model exhibition.jpeg" 
+                    alt="Students showcasing their creative projects at model exhibition"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800 mb-2">Science & Model Exhibitions</h4>
                   <p className="text-sm text-gray-600">Students develop creativity and scientific thinking through hands-on project exhibitions</p>
@@ -1183,12 +1223,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Kids Dance Performance */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/schoolimages/rsk public school dehri kids dance.jpeg" 
-                  alt="Children performing dance at cultural events"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/schoolimages/rsk public school dehri kids dance.jpeg" 
+                    alt="Children performing dance at cultural events"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800 mb-2">Cultural Performances</h4>
                   <p className="text-sm text-gray-600">Dance, music, and cultural activities help develop confidence and artistic skills</p>
@@ -1196,12 +1238,14 @@ export default function ParentsPage() {
               </div>
 
               {/* NCC Cadet Activities */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/schoolimages/rsk public school dehri students NCC cadet march.jpeg" 
-                  alt="NCC cadets marching - developing discipline and leadership"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/schoolimages/rsk public school dehri students NCC cadet march.jpeg" 
+                    alt="NCC cadets marching - developing discipline and leadership"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800 mb-2">NCC & Discipline Training</h4>
                   <p className="text-sm text-gray-600">NCC activities build discipline, leadership, and patriotic values</p>
@@ -1209,12 +1253,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Horse Riding Activities */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/activitiesandevent/rsk public school dehri horse riding.jpg" 
-                  alt="Students learning horse riding at RSK Public School"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/activitiesandevent/rsk public school dehri horse riding.jpg" 
+                    alt="Students learning horse riding at RSK Public School"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800 mb-2">Horse Riding Classes</h4>
                   <p className="text-sm text-gray-600">Unique opportunity for students to learn horse riding and develop courage and confidence</p>
@@ -1222,12 +1268,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Educational Trips */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/experienceimages/cbse school in dehri on sone RSK public school educational field trip .jpeg" 
-                  alt="RSK students enjoying educational field trips and learning adventures"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/experienceimages/cbse school in dehri on sone RSK public school educational field trip .jpeg" 
+                    alt="RSK students enjoying educational field trips and learning adventures"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800 mb-2">Educational Field Trips</h4>
                   <p className="text-sm text-gray-600">Exciting learning adventures to museums, historical sites, and educational destinations</p>
@@ -1235,12 +1283,14 @@ export default function ParentsPage() {
               </div>
 
               {/* Inter-School Competitions */}
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/activitiesandevent/rsk public school dehri inter school competitions.jpg" 
-                  alt="RSK students excelling in inter-school competitions"
-                  className="w-full h-48 object-cover"
-                />
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                <div className="h-52 bg-slate-900 flex items-center justify-center p-1">
+                  <img 
+                    src="/activitiesandevent/rsk public school dehri inter school competitions.jpg" 
+                    alt="RSK students excelling in inter-school competitions"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div className="p-4">
                   <h4 className="font-semibold text-gray-800 mb-2">Competition Excellence</h4>
                   <p className="text-sm text-gray-600">Students representing RSK with pride in various inter-school competitions and events</p>

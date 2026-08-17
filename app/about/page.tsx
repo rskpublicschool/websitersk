@@ -110,55 +110,59 @@ export default function AboutPage() {
                 Hear directly from our leadership about our vision, values, and commitment to excellence
               </p>
               
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg">
-                  <video 
-                    className="w-full h-64 object-cover" 
-                    controls
-                  >
-                    <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto justify-items-center">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg border border-blue-100 w-full max-w-[300px]">
+                  <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                    <video 
+                      className="w-full h-full object-contain bg-black" 
+                      controls
+                    >
+                      <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-800">Director's Message</h4>
-                        <p className="text-sm text-gray-600">Vision for Educational Excellence</p>
+                        <h4 className="font-bold text-gray-800 text-base">Director's Message</h4>
+                        <p className="text-xs text-gray-600">Vision for Educational Excellence</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-sm">
-                      Our Director shares insights about RSK's mission, educational philosophy, and future plans for student development.
+                    <p className="text-gray-700 text-xs leading-relaxed">
+                      Our Director shares insights about RSK's mission and future plans.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl overflow-hidden shadow-lg">
-                  <video 
-                    className="w-full h-64 object-cover" 
-                    controls
-                  >
-                    <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div className="p-6">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl overflow-hidden shadow-lg border border-emerald-100 w-full max-w-[300px]">
+                  <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                    <video 
+                      className="w-full h-full object-contain bg-black" 
+                      controls
+                    >
+                      <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-800">Principal's Message</h4>
-                        <p className="text-sm text-gray-600">Academic Leadership & School Management</p>
+                        <h4 className="font-bold text-gray-800 text-base">Principal's Message</h4>
+                        <p className="text-xs text-gray-600">Academic Leadership & Management</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-sm">
-                      Our Principal discusses academic excellence, teaching methodologies, and the comprehensive approach to student development at RSK.
+                    <p className="text-gray-700 text-xs leading-relaxed">
+                      Our Principal discusses academic standards and student development.
                     </p>
                   </div>
                 </div>

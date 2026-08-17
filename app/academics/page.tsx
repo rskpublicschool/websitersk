@@ -375,33 +375,37 @@ export default function StudentsPage() {
           {/* Project Demonstration Videos */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Student Project Demonstrations</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto justify-items-center">
               
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-                <video 
-                  className="w-full h-64 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri exhibition day student feedback and project demostration isro .mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-6">
-                  <h4 className="font-semibold text-gray-800 mb-2">ISRO Space Science Project</h4>
-                  <p className="text-sm text-gray-600">Students showcasing their innovative space science project with detailed explanations and demonstrations during exhibition day</p>
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri exhibition day student feedback and project demostration isro .mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="p-5">
+                  <h4 className="font-semibold text-gray-800 mb-2 text-base">ISRO Space Science Project</h4>
+                  <p className="text-xs text-gray-600 leading-relaxed">Students showcasing their space science project during exhibition day.</p>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-                <video 
-                  className="w-full h-64 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri exhibition day student feedback and project demostration srk school model.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-6">
-                  <h4 className="font-semibold text-gray-800 mb-2">School Model Project</h4>
-                  <p className="text-sm text-gray-600">Creative school model demonstration showing architectural design skills and innovative thinking by our talented students</p>
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri exhibition day student feedback and project demostration srk school model.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="p-5">
+                  <h4 className="font-semibold text-gray-800 mb-2 text-base">School Model Project</h4>
+                  <p className="text-xs text-gray-600 leading-relaxed">Creative school model demonstration showing architectural design skills.</p>
                 </div>
               </div>
             </div>
@@ -498,46 +502,52 @@ export default function StudentsPage() {
           {/* Student Video Testimonials */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Student Video Stories</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-lg border border-orange-200">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri karate student saying boy.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
+              <div className="bg-gradient-to-br from-orange-100 to-red-100 rounded-xl overflow-hidden shadow-lg border border-orange-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri karate student saying boy.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Karate Student - Body Mind Connection</h4>
-                  <p className="text-sm text-gray-600">"Hum khelte hain, seekhte hain, jeette hain!"</p>
+                  <h4 className="font-semibold text-gray-800 text-sm">Karate Student - Body Mind</h4>
+                  <p className="text-xs text-gray-600 mt-1">"Hum khelte hain, seekhte hain, jeette hain!"</p>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl overflow-hidden shadow-lg border border-pink-200">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri karate student saying girl.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl overflow-hidden shadow-lg border border-pink-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri karate student saying girl.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Karate Student Girl - Confidence</h4>
-                  <p className="text-sm text-gray-600">"Discipline and strength through martial arts"</p>
+                  <h4 className="font-semibold text-gray-800 text-sm">Karate Student Girl - Confidence</h4>
+                  <p className="text-xs text-gray-600 mt-1">"Discipline and strength through martial arts"</p>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-purple-100 to-violet-100 rounded-xl overflow-hidden shadow-lg border border-purple-200">
-                <video 
-                  className="w-full h-48 object-cover" 
-                  controls
-                >
-                  <source src="/schoolvideos/rsk public school dehri karate student saying girl 2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="bg-gradient-to-br from-purple-100 to-violet-100 rounded-xl overflow-hidden shadow-lg border border-purple-200 w-full max-w-[280px]">
+                <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
+                  <video 
+                    className="w-full h-full object-contain bg-black" 
+                    controls
+                  >
+                    <source src="/schoolvideos/rsk public school dehri karate student saying girl 2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Karate Student Girl 2 - Leadership</h4>
-                  <p className="text-sm text-gray-600">"Mind-body balance through martial arts training"</p>
+                  <h4 className="font-semibold text-gray-800 text-sm">Karate Student Girl - Leadership</h4>
+                  <p className="text-xs text-gray-600 mt-1">"Mind-body balance through martial arts training"</p>
                 </div>
               </div>
             </div>

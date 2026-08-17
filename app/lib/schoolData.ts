@@ -4,9 +4,10 @@ export const schoolInfo: SchoolInfo = {
   name: "RSK Public School",
   affiliationNo: "331083",
   schoolCode: "66831",
-  address: "BASTIPUR, DEHRI ON SONE, BIHAR",
+  address: "Bastipur, Dehri, Bihar",
   pinCode: "821305",
-  principalName: "Mr. Raj Narayan Singh",
+  directorName: "Shri Anand Singh",
+  principalName: "Shri Raj Narayan Singh",
   principalQualification: "M.A., B.Ed.",
   email: "rskpublicschooldehri@gmail.com",
   phone: "9631160967, 8210922434, 9934958096",
@@ -58,7 +59,7 @@ export const navigationItems: NavItem[] = [
 
 export const infrastructureDetails: InfrastructureDetail[] = [
   { label: "Total Campus Area", value: "2 acres" },
-  { label: "Number of Classrooms", value: "30+ rooms (avg. 450 sq.ft each)" },
+  { label: "Number of Classrooms", value: "52 classrooms (avg. 500 sq.ft each)" },
   { label: "Science Laboratories", value: "1 lab (Multi-purpose)" },
   { label: "Computer Labs", value: "1 lab with modern computers" },
   { label: "Library", value: "1000+ books, Reading room capacity: 50" },
@@ -72,10 +73,10 @@ export const mandatoryDocuments: DocumentItem[] = [
   // Academic Certificates
   {
     id: "1",
-    title: "Affiliation Letter for Senior Secondary",
+    title: "Extension of Affiliation Up to 2031",
     category: "Academic Certificates",
-    fileUrl: "/mandatorydisclosures/AFFILIATION LETTER FOR SENIOR SECONDARY.pdf",
-    updatedAt: "2026-05-19"
+    fileUrl: "/mandatorydisclosures/EXTENSION OF AFFILIATION UP TO 2031.pdf",
+    updatedAt: "2026-08-17"
   },
   {
     id: "2",
@@ -118,8 +119,8 @@ export const mandatoryDocuments: DocumentItem[] = [
     id: "4",
     title: "Ramjag Singh Trust Deed",
     category: "Legal & Trust Documents",
-    fileUrl: "/mandatorydisclosures/RAMJAG SINGH TRUST DEED_compressed.pdf",
-    updatedAt: "2026-05-19"
+    fileUrl: "/mandatorydisclosures/RAMJAG SINGH TRUST DEED.pdf",
+    updatedAt: "2026-08-17"
   },
   {
     id: "5",
@@ -162,8 +163,15 @@ export const mandatoryDocuments: DocumentItem[] = [
     id: "9",
     title: "Ramjag Singh Lease Deed",
     category: "Property & Infrastructure",
-    fileUrl: "/mandatorydisclosures/RAMJAG SINGH LEASE DEED_compressed.pdf",
-    updatedAt: "2026-05-19"
+    fileUrl: "/mandatorydisclosures/RAMJAG SINGH LEASE DEED.pdf",
+    updatedAt: "2026-08-17"
+  },
+  {
+    id: "28",
+    title: "Built Up Area Certificate",
+    category: "Property & Infrastructure",
+    fileUrl: "/mandatorydisclosures/BUILT UP AREA CERTIFICATE.pdf",
+    updatedAt: "2026-08-17"
   },
   {
     id: "10",
@@ -179,28 +187,28 @@ export const mandatoryDocuments: DocumentItem[] = [
     title: "Building Safety Certificate",
     category: "Safety & Security",
     fileUrl: "/mandatorydisclosures/BUILDING SAFETY CERTIFICATE.pdf",
-    updatedAt: "2026-05-19"
+    updatedAt: "2026-08-17"
   },
   {
     id: "12",
-    title: "Fire Safety Certificate",
+    title: "Fire Safety Certificate 2026-27",
     category: "Safety & Security",
-    fileUrl: "/mandatorydisclosures/FIRE SAFETY CERTIFICATE.pdf",
-    updatedAt: "2026-05-19"
+    fileUrl: "/mandatorydisclosures/FIRE SAFETY CERTIFICATE 2026-27.pdf",
+    updatedAt: "2026-08-17"
   },
   {
     id: "13",
     title: "Drinking Water and Sanitation Certificate",
     category: "Safety & Security",
     fileUrl: "/mandatorydisclosures/DRINKING WATER AND SANITATION CERTIFICATE.pdf",
-    updatedAt: "2026-05-19"
+    updatedAt: "2026-08-17"
   },
   {
     id: "14",
     title: "Drinking Water Sample Report",
     category: "Safety & Security",
     fileUrl: "/mandatorydisclosures/DRINKING WATER SAMPLE REPORT.pdf",
-    updatedAt: "2026-05-19"
+    updatedAt: "2026-08-17"
   },
 
   // Financial Documents
@@ -209,7 +217,7 @@ export const mandatoryDocuments: DocumentItem[] = [
     title: "Fee Structure 2026-27",
     category: "Financial Documents",
     fileUrl: "/mandatorydisclosures/FEE STRUCTURE 2026-27.pdf",
-    updatedAt: "2026-05-19"
+    updatedAt: "2026-08-17"
   },
   {
     id: "16",
@@ -246,21 +254,21 @@ export const mandatoryDocuments: DocumentItem[] = [
     title: "School Management Committee",
     category: "Governance & Compliance",
     fileUrl: "/mandatorydisclosures/SCHOOL MANAGEMENT COMMITTEE.pdf",
-    updatedAt: "2026-05-19"
+    updatedAt: "2026-08-17"
   },
   {
     id: "21",
     title: "Parents Teachers Association",
     category: "Governance & Compliance",
     fileUrl: "/mandatorydisclosures/PARENTS TEACHERS ASSOCIATION.pdf",
-    updatedAt: "2026-05-19"
+    updatedAt: "2026-08-17"
   },
   {
     id: "26",
-    title: "Prevention of Sexual Harassment Committee",
+    title: "Prevention Against Sexual Harassment Committee",
     category: "Governance & Compliance",
-    fileUrl: "/mandatorydisclosures/Prevention of Sexual Harassment Committee.pdf",
-    updatedAt: "2026-05-19"
+    fileUrl: "/mandatorydisclosures/PREVENTION AGAINST SEXUAL HARASSMENT COMMITTEE.pdf",
+    updatedAt: "2026-08-17"
   },
   {
     id: "22",

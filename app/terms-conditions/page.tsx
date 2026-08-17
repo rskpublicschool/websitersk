@@ -177,7 +177,7 @@ export default function TermsConditionsPage() {
               </p>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <p className="text-gray-800 font-semibold">{schoolInfo.name}</p>
-                <p className="text-gray-700">{schoolInfo.address}</p>
+                <p className="text-gray-700">{schoolInfo.address}, {schoolInfo.pinCode}</p>
                 <p className="text-gray-700">Phone: {schoolInfo.phone}</p>
                 <p className="text-gray-700">Email: {schoolInfo.email}</p>
               </div>

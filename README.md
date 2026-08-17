@@ -1,6 +1,6 @@
 # RSK Public School Website
 
-A modern, SEO-optimized educational website built with Next.js 16, React 19, and Tailwind CSS v4 for R.S.K Public School, a CBSE affiliated institution in Buxar, Bihar.
+A modern, SEO-optimized educational website built with Next.js 16, React 19, and Tailwind CSS v4 for R.S.K Public School, a CBSE affiliated institution in Bastipur, Dehri, Bihar 821305.
 
 ## 🎯 Project Overview
 

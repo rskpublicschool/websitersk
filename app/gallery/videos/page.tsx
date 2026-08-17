@@ -159,16 +159,16 @@ export default function VideoGalleryPage() {
               </div>
 
               {/* Videos Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 {category.videos.map((video, videoIndex) => (
                   <div
                     key={videoIndex}
-                    className="bg-white rounded-xl shadow-soft hover:shadow-lg transition-all duration-300 overflow-hidden"
+                    className="bg-white rounded-xl shadow-soft hover:shadow-lg transition-all duration-300 overflow-hidden w-full max-w-[280px]"
                   >
                     {/* Video Player */}
-                    <div className="relative h-48 bg-gray-900">
+                    <div className="relative aspect-[9/16] bg-slate-900 flex items-center justify-center">
                       <video
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain bg-black"
                         controls
                         preload="metadata"
                       >

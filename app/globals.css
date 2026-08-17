@@ -40,3 +40,44 @@ body {
 .animate-fade-in {
   animation: fade-in 0.2s ease-out forwards;
 }
+
+/* Shake animation for social media icons */
+@keyframes shake-attention {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(-12deg) scale(1.1);
+  }
+  20% {
+    transform: rotate(12deg) scale(1.1);
+  }
+  30% {
+    transform: rotate(-8deg) scale(1.08);
+  }
+  40% {
+    transform: rotate(8deg) scale(1.08);
+  }
+  50% {
+    transform: rotate(-4deg) scale(1.04);
+  }
+  60% {
+    transform: rotate(4deg) scale(1.04);
+  }
+  70% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-shake-icon {
+  animation: shake-attention 2.5s infinite ease-in-out;
+}
+
+.animate-shake-delay-1 {
+  animation-delay: 0.4s;
+}
+
+.animate-shake-delay-2 {
+  animation-delay: 0.8s;
+}
+

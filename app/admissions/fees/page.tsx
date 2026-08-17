@@ -11,177 +11,16 @@ export const metadata: Metadata = {
 
 export default function FeeStructurePage() {
   const feeStructure = [
-    {
-      class: "Nursery",
-      admissionFee: 3000,
-      annualFee: 8000,
-      monthlyFee: 1200,
-      examFee: 500,
-      activityFee: 1000,
-      total: 13700
-    },
-    {
-      class: "LKG",
-      admissionFee: 3000,
-      annualFee: 8000,
-      monthlyFee: 1200,
-      examFee: 500,
-      activityFee: 1000,
-      total: 13700
-    },
-    {
-      class: "UKG",
-      admissionFee: 3000,
-      annualFee: 8000,
-      monthlyFee: 1200,
-      examFee: 500,
-      activityFee: 1000,
-      total: 13700
-    },
-    {
-      class: "Class I",
-      admissionFee: 3500,
-      annualFee: 10000,
-      monthlyFee: 1500,
-      examFee: 800,
-      activityFee: 1200,
-      total: 17000
-    },
-    {
-      class: "Class II",
-      admissionFee: 3500,
-      annualFee: 10000,
-      monthlyFee: 1500,
-      examFee: 800,
-      activityFee: 1200,
-      total: 17000
-    },
-    {
-      class: "Class III",
-      admissionFee: 3500,
-      annualFee: 10000,
-      monthlyFee: 1500,
-      examFee: 800,
-      activityFee: 1200,
-      total: 17000
-    },
-    {
-      class: "Class IV",
-      admissionFee: 3500,
-      annualFee: 10000,
-      monthlyFee: 1500,
-      examFee: 800,
-      activityFee: 1200,
-      total: 17000
-    },
-    {
-      class: "Class V",
-      admissionFee: 3500,
-      annualFee: 10000,
-      monthlyFee: 1500,
-      examFee: 800,
-      activityFee: 1200,
-      total: 17000
-    },
-    {
-      class: "Class VI",
-      admissionFee: 4000,
-      annualFee: 12000,
-      monthlyFee: 1800,
-      examFee: 1000,
-      activityFee: 1500,
-      total: 20300
-    },
-    {
-      class: "Class VII",
-      admissionFee: 4000,
-      annualFee: 12000,
-      monthlyFee: 1800,
-      examFee: 1000,
-      activityFee: 1500,
-      total: 20300
-    },
-    {
-      class: "Class VIII",
-      admissionFee: 4000,
-      annualFee: 12000,
-      monthlyFee: 1800,
-      examFee: 1000,
-      activityFee: 1500,
-      total: 20300
-    },
-    {
-      class: "Class IX",
-      admissionFee: 5000,
-      annualFee: 15000,
-      monthlyFee: 2200,
-      examFee: 1500,
-      activityFee: 2000,
-      total: 25700
-    },
-    {
-      class: "Class X",
-      admissionFee: 5000,
-      annualFee: 15000,
-      monthlyFee: 2200,
-      examFee: 1500,
-      activityFee: 2000,
-      total: 25700
-    },
-    {
-      class: "Class XI (Science)",
-      admissionFee: 6000,
-      annualFee: 18000,
-      monthlyFee: 2500,
-      examFee: 2000,
-      activityFee: 2500,
-      total: 31000
-    },
-    {
-      class: "Class XI (Commerce)",
-      admissionFee: 6000,
-      annualFee: 18000,
-      monthlyFee: 2500,
-      examFee: 2000,
-      activityFee: 2500,
-      total: 31000
-    },
-    {
-      class: "Class XI (Arts)",
-      admissionFee: 6000,
-      annualFee: 18000,
-      monthlyFee: 2500,
-      examFee: 2000,
-      activityFee: 2500,
-      total: 31000
-    },
-    {
-      class: "Class XII (Science)",
-      admissionFee: 6000,
-      annualFee: 18000,
-      monthlyFee: 2500,
-      examFee: 2000,
-      activityFee: 2500,
-      total: 31000
-    },
-    {
-      class: "Class XII (Commerce)",
-      admissionFee: 6000,
-      annualFee: 18000,
-      monthlyFee: 2500,
-      examFee: 2000,
-      activityFee: 2500,
-      total: 31000
-    },
-    {
-      class: "Class XII (Arts)",
-      admissionFee: 6000,
-      annualFee: 18000,
-      monthlyFee: 2500,
-      examFee: 2000,
-      activityFee: 2500,
-      total: 31000
-    }
+    { class: "Play to Nursery", monthlyFee: 1080 },
+    { class: "L.K.G. to U.K.G.", monthlyFee: 1180 },
+    { class: "Std-I to Std-II", monthlyFee: 1280 },
+    { class: "Std-III to Std-IV", monthlyFee: 1480 },
+    { class: "Std-V to Std-VI", monthlyFee: 1580 },
+    { class: "Std-VII to Std-VIII", monthlyFee: 1780 },
+    { class: "Std-IX", monthlyFee: 2180 },
+    { class: "Std-X", monthlyFee: 2180 },
+    { class: "Std-XI", monthlyFee: 2580 },
+    { class: "Std-XII", monthlyFee: 2580 }
   ];
 
   const additionalFees = [
@@ -209,31 +48,6 @@ export default function FeeStructurePage() {
       service: "Lunch Program",
       fee: "₹1,500/month",
       description: "Nutritious meals prepared in-house"
-    },
-    {
-      service: "Computer Lab Fee",
-      fee: "₹500/year",
-      description: "Access to computer lab and software"
-    },
-    {
-      service: "Science Lab Fee",
-      fee: "₹800/year",
-      description: "Laboratory experiments and materials"
-    },
-    {
-      service: "Library Fee",
-      fee: "₹300/year",
-      description: "Access to books and digital resources"
-    },
-    {
-      service: "Sports Fee",
-      fee: "₹600/year",
-      description: "Sports equipment and coaching"
-    },
-    {
-      service: "Late Fee (per day)",
-      fee: "₹50",
-      description: "Penalty for late fee payment"
     }
   ];
 
@@ -252,41 +66,32 @@ export default function FeeStructurePage() {
       method: "Cash/Cheque",
       description: "Visit school office for cash payment or submit cheque in favor of RSK Public School",
       icon: "💵"
-    },
-    {
-      method: "EMI Options",
-      description: "Flexible EMI options available for annual fees (conditions apply)",
-      icon: "📅"
     }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4">
-        <SectionTitle centered subtitle="Transparent pricing with no hidden charges">
-          Fee Structure
+        <SectionTitle centered subtitle="Transparent 2026-27 tuition fee structure with no hidden charges">
+          Monthly Fee Structure (2026-27)
         </SectionTitle>
 
         {/* Fee Overview */}
         <div className="max-w-6xl mx-auto mb-12">
-          <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+          <Card className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-xl">
             <CardBody>
-              <div className="grid md:grid-cols-4 gap-6 text-center">
+              <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold mb-2">₹3,000</div>
-                  <div className="text-blue-100">Starting Admission Fee</div>
+                  <div className="text-3xl font-bold mb-2">₹1,080/mo</div>
+                  <div className="text-blue-100">Starting Tuition Fee (Play-Nursery)</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold mb-2">₹1,200</div>
-                  <div className="text-blue-100">Starting Monthly Fee</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-2">0%</div>
-                  <div className="text-blue-100">Hidden Charges</div>
+                  <div className="text-3xl font-bold mb-2">₹2,580/mo</div>
+                  <div className="text-blue-100">Senior Secondary (XI-XII)</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">100%</div>
-                  <div className="text-blue-100">Transparency</div>
+                  <div className="text-blue-100">Transparent Monthly Fees</div>
                 </div>
               </div>
             </CardBody>
@@ -294,49 +99,39 @@ export default function FeeStructurePage() {
         </div>
 
         {/* Detailed Fee Structure */}
-        <div className="max-w-7xl mx-auto mb-12">
-          <Card>
-            <CardHeader>
-              <h3 className="text-2xl font-bold text-gray-900">Detailed Fee Structure</h3>
-              <p className="text-gray-600 mt-2">All fees are in Indian Rupees (₹). First year total includes admission fee.</p>
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="shadow-lg">
+            <CardHeader className="bg-gradient-to-r from-slate-900 to-blue-950 text-white">
+              <h3 className="text-2xl font-bold">Class-wise Monthly Tuition Fees (2026-27)</h3>
+              <p className="text-slate-300 text-sm mt-1">Monthly tuition fees as per official RSK Public School schedule.</p>
             </CardHeader>
-            <CardBody>
+            <CardBody className="p-0">
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-gray-50 border-b-2 border-gray-200">
-                      <th className="text-left py-4 px-4 font-semibold text-gray-900">Class</th>
-                      <th className="text-center py-4 px-4 font-semibold text-gray-900">Admission Fee</th>
-                      <th className="text-center py-4 px-4 font-semibold text-gray-900">Annual Fee</th>
-                      <th className="text-center py-4 px-4 font-semibold text-gray-900">Monthly Fee</th>
-                      <th className="text-center py-4 px-4 font-semibold text-gray-900">Exam Fee</th>
-                      <th className="text-center py-4 px-4 font-semibold text-gray-900">Activity Fee</th>
-                      <th className="text-center py-4 px-4 font-semibold text-gray-900 bg-blue-50">First Year Total</th>
+                    <tr className="bg-blue-50/80 border-b-2 border-blue-200">
+                      <th className="text-left py-4 px-6 font-bold text-slate-800 text-base">Classes / Standard</th>
+                      <th className="text-right py-4 px-6 font-bold text-emerald-700 text-base">Monthly Tuition Fee</th>
                     </tr>
                   </thead>
                   <tbody>
                     {feeStructure.map((fee, index) => (
-                      <tr key={index} className={`border-b border-gray-100 hover:bg-gray-50 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-25'}`}>
-                        <td className="py-4 px-4 font-medium text-gray-900">{fee.class}</td>
-                        <td className="py-4 px-4 text-center text-gray-700">₹{fee.admissionFee.toLocaleString()}</td>
-                        <td className="py-4 px-4 text-center text-gray-700">₹{fee.annualFee.toLocaleString()}</td>
-                        <td className="py-4 px-4 text-center text-gray-700">₹{fee.monthlyFee.toLocaleString()}</td>
-                        <td className="py-4 px-4 text-center text-gray-700">₹{fee.examFee.toLocaleString()}</td>
-                        <td className="py-4 px-4 text-center text-gray-700">₹{fee.activityFee.toLocaleString()}</td>
-                        <td className="py-4 px-4 text-center font-bold text-blue-700 bg-blue-50">₹{fee.total.toLocaleString()}</td>
+                      <tr key={index} className={`border-b border-gray-100 hover:bg-blue-50/50 transition-colors ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
+                        <td className="py-4 px-6 font-semibold text-gray-900">{fee.class}</td>
+                        <td className="py-4 px-6 text-right font-extrabold text-emerald-600 text-lg">₹{fee.monthlyFee.toLocaleString('en-IN')}/month</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-              <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                <h4 className="font-semibold text-amber-800 mb-2">Important Notes:</h4>
+              <div className="p-6 bg-amber-50 border-t border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 flex items-center gap-2">
+                  <span>📌</span> Important Notes:
+                </h4>
                 <ul className="text-amber-700 text-sm space-y-1">
-                  <li>• Monthly fees are to be paid by 10th of each month</li>
-                  <li>• Annual fees can be paid in 2-3 installments</li>
-                  <li>• Late payment attracts penalty charges</li>
-                  <li>• Fees once paid are non-refundable</li>
-                  <li>• Fee structure is subject to annual revision</li>
+                  <li>• Monthly tuition fees are to be paid by the 10th of each month.</li>
+                  <li>• No annual fee or extra hidden administrative charges.</li>
+                  <li>• For admission inquiries or online payment assistance, contact the school office.</li>
                 </ul>
               </div>
             </CardBody>

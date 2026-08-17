@@ -44,17 +44,17 @@ export default function InfrastructurePage() {
             </CardBody>
           </Card>
 
-          {/* Total Campus Area Image */}
-          <Card>
+          {/* Campus Highlights */}
+          <Card className="mb-12">
             <CardHeader>
               <h3 className="text-2xl font-bold text-gray-900 text-center">Our Beautiful Campus - 2 Acres</h3>
             </CardHeader>
             <CardBody>
-              <div className="w-full h-64 rounded-lg overflow-hidden">
+              <div className="w-full h-64 sm:h-80 rounded-lg overflow-hidden bg-slate-950 flex items-center justify-center p-2">
                 <img 
                   src="/Rsk public school dehri model image.webp" 
                   alt="RSK Public School Beautiful Campus - 2 Acres Campus Area"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
               <p className="text-center text-gray-600 mt-4 text-sm">
@@ -70,11 +70,11 @@ export default function InfrastructurePage() {
                 <CardBody className="p-6">
                   {/* Image for each infrastructure detail */}
                   <div className="mb-4">
-                    <div className="w-full h-32 rounded-lg overflow-hidden">
+                    <div className="w-full h-36 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                       <img 
                         src={getInfrastructureImage(detail.label)} 
                         alt={`${detail.label} - ${detail.value}`}
-                        className="w-full h-full object-cover rounded-lg"
+                        className="w-full h-full object-contain rounded-lg"
                       />
                     </div>
                   </div>
@@ -104,11 +104,11 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image for Smart Classrooms */}
                 <div className="mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
                       src="/schoolimages/smart classroom rsk public school dehri on sone best cbse school in dehri on sone.jpeg" 
                       alt="RSK Public School Smart Classroom with modern facilities"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </div>
                 </div>
@@ -123,19 +123,19 @@ export default function InfrastructurePage() {
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Digital boards and projectors</span>
+                    <span>Smart interactive boards</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Comfortable seating arrangements</span>
+                    <span>Ergonomic furniture for comfortable seating</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Natural lighting and modern fixtures</span>
+                    <span>Audio-visual teaching aids</span>
                   </li>
                 </ul>
               </CardBody>
@@ -156,11 +156,11 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image for Science Laboratory */}
                 <div className="mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
                       src="/schoolimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
                       alt="RSK Public School Science Laboratory with modern equipment"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </div>
                 </div>
@@ -208,11 +208,11 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image for Computer Laboratories */}
                 <div className="mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
                       src="/schoolimages/computer lab rsk public school dehri on sone cbse school in dehri on sone.webp" 
                       alt="RSK Public School Computer Laboratory with modern computers"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </div>
                 </div>
@@ -260,11 +260,11 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image for Library & Reading Room */}
                 <div className="mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
                       src="/schoolimages/library rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
                       alt="RSK Public School Library with reading room and books collection"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </div>
                 </div>
@@ -312,11 +312,11 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image placeholder for Sports & Recreation */}
                 <div className="mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
                       src="/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg" 
                       alt="RSK Public School Playground and Sports Ground"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </div>
                 </div>
@@ -364,11 +364,11 @@ export default function InfrastructurePage() {
               <CardBody>
                 {/* Image placeholder for Safety & Security */}
                 <div className="mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
                       src="/schoolimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
                       alt="RSK Public School Safe and Secure Campus Premises"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg"
                     />
                   </div>
                 </div>
