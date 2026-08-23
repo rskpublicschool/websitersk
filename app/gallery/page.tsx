@@ -19,28 +19,97 @@ export default function GalleryPage() {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Photo Gallery */}
-            <Card hover>
-              <div className="relative h-64 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                  <svg className="w-full h-full" viewBox="0 0 200 200" fill="white">
-                    <rect x="20" y="40" width="60" height="50" rx="4"/>
-                    <rect x="90" y="40" width="90" height="50" rx="4"/>
-                    <rect x="20" y="100" width="90" height="60" rx="4"/>
-                    <rect x="120" y="100" width="60" height="60" rx="4"/>
-                  </svg>
+            {/* Photo Gallery Card with 6-Image Mosaic */}
+            <Card hover className="group overflow-hidden flex flex-col">
+              <Link href="/gallery/photos" className="block relative overflow-hidden bg-slate-950">
+                {/* 6-Image Mosaic Collage */}
+                <div className="h-64 sm:h-72 w-full grid grid-cols-3 grid-rows-2 gap-1.5 p-1.5 bg-slate-950">
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/corousalimages/cbse school in dehri on sone RSK public school academic excellence.jpeg"
+                      alt="Academic Excellence"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/latestimages/physicslab1.jpeg"
+                      alt="Physics Lab"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/latestimages/classroom2.jpeg"
+                      alt="Smart Classroom"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/activitiesandevent/rsk public school dehri annuals day celebration.jpg"
+                      alt="Annual Day Celebration"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/latestimages/computerlab1.jpeg"
+                      alt="Computer Lab"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/latestimages/playschoolclassroom.jpeg"
+                      alt="Play School Wing"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] flex items-center justify-center text-white font-bold text-xs sm:text-sm border border-white/20 rounded-lg">
+                      <span>+40 More</span>
+                    </div>
+                  </div>
                 </div>
-                <svg className="w-24 h-24 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <CardBody className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Photo Gallery</h3>
-                <p className="text-gray-600 mb-6">
-                  Browse through our collection of photos from various school events, activities, 
-                  celebrations, and daily campus life.
-                </p>
-                <Button href="/gallery/photos" variant="primary">
+
+                {/* Subtle dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30 group-hover:opacity-75 transition-opacity pointer-events-none" />
+
+                {/* Top Badge */}
+                <div className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 bg-blue-600/90 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full shadow-lg border border-blue-400/30 pointer-events-none">
+                  <span>📷 Photo Gallery</span>
+                </div>
+
+                {/* Center Floating Gallery Icon & Callout */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="px-4 py-2.5 rounded-2xl bg-slate-900/85 backdrop-blur-md text-white flex items-center gap-2.5 shadow-2xl border border-white/20 group-hover:scale-105 group-hover:bg-blue-600/90 transition-all duration-300">
+                    {/* Gallery Stack Icon */}
+                    <div className="w-8 h-8 rounded-full bg-blue-500/80 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div className="text-left">
+                      <p className="text-xs font-extrabold leading-tight">Explore Photo Albums</p>
+                      <p className="text-[10px] text-blue-200">11 Categories • 40+ HD Photos</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Overlay Label */}
+                <div className="absolute bottom-3 left-4 right-4 text-white text-left pointer-events-none">
+                  <span className="text-[11px] text-blue-200 font-medium">Labs • Events • Smart Classrooms • Sports</span>
+                </div>
+              </Link>
+
+              <CardBody className="text-center flex-1 flex flex-col justify-between p-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2.5 group-hover:text-blue-600 transition-colors">Photo Gallery</h3>
+                  <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                    Browse interactive albums covering science labs, smart classrooms, annual day functions, sports meets, 
+                    NCC drills, and vibrant campus life.
+                  </p>
+                </div>
+                <Button href="/gallery/photos" variant="primary" className="w-full justify-center">
                   View Photos
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -49,25 +118,101 @@ export default function GalleryPage() {
               </CardBody>
             </Card>
 
-            {/* Video Gallery */}
-            <Card hover>
-              <div className="relative h-64 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                  <svg className="w-full h-full" viewBox="0 0 200 200" fill="white">
-                    <rect x="40" y="60" width="120" height="80" rx="8"/>
-                  </svg>
+            {/* Video Gallery Card with 6-Image Mosaic */}
+            <Card hover className="group overflow-hidden flex flex-col">
+              <Link href="/gallery/videos" className="block relative overflow-hidden bg-slate-950">
+                {/* 6-Image Mosaic Collage */}
+                <div className="h-64 sm:h-72 w-full grid grid-cols-3 grid-rows-2 gap-1.5 p-1.5 bg-slate-950">
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/schoolimages/rsk public school dehri students stunt formations activities  (1).jpeg"
+                      alt="Republic Day Stunt Formation"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1 right-1 bg-black/70 text-[9px] text-white px-1 py-0.5 rounded font-mono">▶</span>
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/schoolimages/rsk public school dehri kids dance.jpeg"
+                      alt="Kids Dance Performance"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1 right-1 bg-black/70 text-[9px] text-white px-1 py-0.5 rounded font-mono">▶</span>
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/schoolimages/rsk public school dehri kids parate 26th jan.jpeg"
+                      alt="26th Jan Parade"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1 right-1 bg-black/70 text-[9px] text-white px-1 py-0.5 rounded font-mono">▶</span>
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/activitiesandevent/rsk public school dehri science fair innovation.jpg"
+                      alt="Science Fair Demo"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1 right-1 bg-black/70 text-[9px] text-white px-1 py-0.5 rounded font-mono">▶</span>
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/activitiesandevent/rsk public school dehri horse riding.jpg"
+                      alt="Horse Riding Video"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1 right-1 bg-black/70 text-[9px] text-white px-1 py-0.5 rounded font-mono">▶</span>
+                  </div>
+                  <div className="relative overflow-hidden rounded-lg bg-slate-900">
+                    <img
+                      src="/schoolimages/rsk public school dehri students performance song.jpeg"
+                      alt="Student Song Performance"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] flex items-center justify-center text-white font-bold text-xs sm:text-sm border border-white/20 rounded-lg">
+                      <span>+16 Videos</span>
+                    </div>
+                  </div>
                 </div>
-                <svg className="w-24 h-24 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <CardBody className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Video Gallery</h3>
-                <p className="text-gray-600 mb-6">
-                  Watch videos of our annual functions, sports events, cultural programs, 
-                  and student performances.
-                </p>
-                <Button href="/gallery/videos" variant="primary">
+
+                {/* Subtle dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30 group-hover:opacity-75 transition-opacity pointer-events-none" />
+
+                {/* Top Badge */}
+                <div className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 bg-red-600/90 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full shadow-lg border border-red-400/30 pointer-events-none">
+                  <span>🎥 Video Gallery</span>
+                </div>
+
+                {/* Center Glowing Play Button & Callout */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="px-4 py-2.5 rounded-2xl bg-slate-900/85 backdrop-blur-md text-white flex items-center gap-2.5 shadow-2xl border border-white/20 group-hover:scale-105 group-hover:bg-red-600/90 transition-all duration-300">
+                    <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center shadow-lg">
+                      <svg className="w-4 h-4 ml-0.5 text-white fill-current" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                    <div className="text-left">
+                      <p className="text-xs font-extrabold leading-tight">Watch School Videos</p>
+                      <p className="text-[10px] text-red-200">Performances • Karate • Testimonials</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Overlay Label */}
+                <div className="absolute bottom-3 left-4 right-4 text-white text-left pointer-events-none">
+                  <span className="text-[11px] text-red-200 font-medium">Student Stunts • Dance • Karate • ISRO Project</span>
+                </div>
+              </Link>
+
+              <CardBody className="text-center flex-1 flex flex-col justify-between p-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2.5 group-hover:text-red-600 transition-colors">Video Gallery</h3>
+                  <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                    Watch authentic videos of cultural performances, karate martial arts, science exhibitions, 
+                    student leadership, and parent testimonials.
+                  </p>
+                </div>
+                <Button href="/gallery/videos" variant="primary" className="w-full justify-center bg-red-600 hover:bg-red-700">
                   Watch Videos
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

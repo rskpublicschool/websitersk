@@ -13,6 +13,63 @@ interface Category {
 export default function PhotoGalleryClient() {
   const photoCategories: Category[] = [
     {
+      name: 'Physics Laboratories',
+      images: [
+        '/latestimages/physicslab1.jpeg',
+        '/latestimages/physicslab2.jpeg'
+      ],
+      color: 'blue',
+      count: 2
+    },
+    {
+      name: 'Chemistry Laboratories',
+      images: [
+        '/latestimages/chemistrylab1.jpeg',
+        '/latestimages/chemistrylab2.jpeg'
+      ],
+      color: 'emerald',
+      count: 2
+    },
+    {
+      name: 'Biology Laboratories',
+      images: [
+        '/latestimages/biolab1.jpeg',
+        '/latestimages/biolab2.jpeg'
+      ],
+      color: 'teal',
+      count: 2
+    },
+    {
+      name: 'Computer Laboratories & IT',
+      images: [
+        '/latestimages/computerlab1.jpeg',
+        '/latestimages/computerlab2.jpeg'
+      ],
+      color: 'indigo',
+      count: 2
+    },
+    {
+      name: 'Modern Smart Classrooms',
+      images: [
+        '/latestimages/classroom1.jpeg',
+        '/latestimages/classroom2.jpeg',
+        '/latestimages/classroom3.jpeg',
+        '/latestimages/classroom4.jpeg',
+        '/latestimages/classroom5.jpeg',
+        '/latestimages/classroom6.jpeg'
+      ],
+      color: 'purple',
+      count: 6
+    },
+    {
+      name: 'Junior & Play School Wing',
+      images: [
+        '/latestimages/playschoolclassroom.jpeg'
+      ],
+      color: 'rose',
+      count: 1
+    },
+    {
       name: 'Annual Day Celebration',
       images: ['/activitiesandevent/rsk public school dehri annuals day celebration.jpg'],
       color: 'blue',
@@ -109,7 +166,7 @@ export default function PhotoGalleryClient() {
     {
       name: 'Teachers & Management',
       images: [
-        '/teacherspage/best cbse school in Dehri RSK public school teachersgroup. .jpeg',
+        '/corousalimages/rsk public school teachers group photo.jpeg',
         '/schoolimages/chief guests and management.jpeg'
       ],
       color: 'violet',
@@ -318,37 +375,6 @@ export default function PhotoGalleryClient() {
                   </div>
                 );
               })}
-          </div>
-
-          {/* Gallery Statistics */}
-          <div className="mt-12 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white p-6 sm:p-8 rounded-2xl shadow-xl border border-indigo-500/30">
-            <div className="text-center max-w-3xl mx-auto">
-              <h4 className="text-xl font-bold mb-2 flex items-center justify-center gap-2">
-                <span>📸</span> Complete Interactive RSK Photo Gallery
-              </h4>
-              <p className="text-gray-300 text-sm mb-6">
-                Click any thumbnail image or category above to launch the high-resolution lightbox slideshow. Use left/right arrow keys or buttons to navigate.
-              </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
-                  <div className="text-3xl font-extrabold text-blue-400">{totalPhotosCount}</div>
-                  <div className="text-xs text-gray-300 font-medium">Total High-Res Photos</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
-                  <div className="text-3xl font-extrabold text-emerald-400">{photoCategories.length}</div>
-                  <div className="text-xs text-gray-300 font-medium">Event Categories</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
-                  <div className="text-3xl font-extrabold text-purple-400">100%</div>
-                  <div className="text-xs text-gray-300 font-medium">Clickable & Navigable</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10">
-                  <div className="text-3xl font-extrabold text-amber-400">HD</div>
-                  <div className="text-xs text-gray-300 font-medium">Popup Lightbox</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

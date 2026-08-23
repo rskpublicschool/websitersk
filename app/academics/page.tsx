@@ -828,7 +828,7 @@ export default function StudentsPage() {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/experienceimages/cbse school in dehri on sone RSK public school dehri on sone classroom.jpeg" 
+                src="/latestimages/classroom1.jpeg" 
                 alt="Modern smart classrooms at RSK Public School Dehri"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -858,7 +858,7 @@ export default function StudentsPage() {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img 
-                src="/experienceimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
+                src="/latestimages/physicslab1.jpeg" 
                 alt="Well-equipped science laboratories for hands-on learning"
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />

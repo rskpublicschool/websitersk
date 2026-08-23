@@ -24,7 +24,7 @@ export default function PrincipalPage() {
                 <div className="md:col-span-1">
                   <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
                     <Image
-                      src="/Rsk public school principle sir.webp"
+                      src="/principalsir.jpeg"
                       alt={`${schoolInfo.principalName} - Principal of RSK Public School`}
                       fill
                       className="object-cover"

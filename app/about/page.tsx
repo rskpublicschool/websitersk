@@ -23,12 +23,12 @@ export default function AboutPage() {
           <Card>
             <CardBody className="p-8 text-center">
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Established in 2007, R.S.K Public School has been a landmark of quality education in Dehri, Bihar. 
-                Affiliated with the Central Board of Secondary Education (CBSE), we are committed to nurturing 
+                Established in 2007, R.S.K Public School has been a landmark of quality education in Dehri, Bihar.
+                Affiliated with the Central Board of Secondary Education (CBSE), we are committed to nurturing
                 young minds and shaping future leaders through holistic education.
               </p>
               <p className="text-gray-600">
-                Our journey of over two decades has been marked by academic excellence, innovative teaching 
+                Our journey of over two decades has been marked by academic excellence, innovative teaching
                 methods, and a deep commitment to student development.
               </p>
             </CardBody>
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <Card hover className="h-full cursor-pointer overflow-hidden">
                 <div className="h-48 relative overflow-hidden">
                   <Image
-                    src="/director RSK top school in dehri rohtas.jpg"
+                    src="/directorsir.jpg"
                     alt="Director - RSK Public School"
                     fill
                     className="object-cover transition-transform duration-300 hover:scale-105"
@@ -63,8 +63,8 @@ export default function AboutPage() {
               <Card hover className="h-full cursor-pointer overflow-hidden">
                 <div className="h-48 relative overflow-hidden">
                   <Image
-                    src="/Rsk public school principle sir.webp"
-                    alt="Mr. Raj Narayan Singh - Principal of RSK Public School"
+                    src="/principalsir.jpeg"
+                    alt="Shri Raj Narayan Singh - Principal of RSK Public School"
                     fill
                     className="object-cover transition-transform duration-300 hover:scale-105"
                   />
@@ -109,12 +109,12 @@ export default function AboutPage() {
               <p className="text-gray-600 text-center mb-8">
                 Hear directly from our leadership about our vision, values, and commitment to excellence
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto justify-items-center">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl overflow-hidden shadow-lg border border-blue-100 w-full max-w-[300px]">
                   <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
-                    <video 
-                      className="w-full h-full object-contain bg-black" 
+                    <video
+                      className="w-full h-full object-contain bg-black"
                       controls
                     >
                       <source src="/schoolvideos/rsk public school dehri director sir briefing about school.mp4" type="video/mp4" />
@@ -141,8 +141,8 @@ export default function AboutPage() {
 
                 <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl overflow-hidden shadow-lg border border-emerald-100 w-full max-w-[300px]">
                   <div className="aspect-[9/16] bg-slate-900 flex items-center justify-center">
-                    <video 
-                      className="w-full h-full object-contain bg-black" 
+                    <video
+                      className="w-full h-full object-contain bg-black"
                       controls
                     >
                       <source src="/schoolvideos/rsk public school dehri principal sir briefing about school and mangement.mp4" type="video/mp4" />
@@ -175,16 +175,16 @@ export default function AboutPage() {
             <CardBody className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Distinguished Guests & Management</h3>
               <div className="max-w-4xl mx-auto">
-                <img 
-                  src="/schoolimages/chief guests and management.jpeg" 
+                <img
+                  src="/schoolimages/chief guests and management.jpeg"
                   alt="Chief Guests and Management at RSK Public School"
                   className="w-full h-80 object-cover rounded-xl shadow-lg mb-6"
                 />
                 <div className="text-center">
                   <h4 className="font-semibold text-gray-800 mb-2">Honored Guests & Leadership Team</h4>
                   <p className="text-gray-600">
-                    RSK Public School regularly welcomes distinguished guests, educational leaders, and dignitaries 
-                    who support our mission of educational excellence. Our management team works tirelessly to 
+                    RSK Public School regularly welcomes distinguished guests, educational leaders, and dignitaries
+                    who support our mission of educational excellence. Our management team works tirelessly to
                     maintain the highest standards of education and infrastructure development.
                   </p>
                 </div>
@@ -206,8 +206,8 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  To be a premier educational institution that nurtures intellectual curiosity, fosters critical 
-                  thinking, and develops well-rounded individuals who contribute positively to society. We envision 
+                  To be a premier educational institution that nurtures intellectual curiosity, fosters critical
+                  thinking, and develops well-rounded individuals who contribute positively to society. We envision
                   a learning environment where every student discovers their potential and pursues excellence.
                 </p>
               </CardBody>
@@ -224,8 +224,8 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  To provide quality education that combines academic rigor with character development, fostering 
-                  creativity, innovation, and social responsibility. We are committed to creating a safe, inclusive, 
+                  To provide quality education that combines academic rigor with character development, fostering
+                  creativity, innovation, and social responsibility. We are committed to creating a safe, inclusive,
                   and supportive learning environment that prepares students for the challenges of tomorrow.
                 </p>
               </CardBody>

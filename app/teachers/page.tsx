@@ -532,7 +532,7 @@ export default function TeachersPage() {
                
                <div className="relative overflow-hidden rounded-lg shadow-lg group bg-slate-950">
                  <img 
-                   src="/experienceimages/cbse school in dehri on sone RSK public school dehri on sone classroom.jpeg" 
+                   src="/latestimages/classroom2.jpeg" 
                    alt="Modern classroom environment at RSK Public School"
                    className="w-full h-52 object-contain p-1 group-hover:scale-105 transition-transform duration-300"
                  />

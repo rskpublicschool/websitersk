@@ -23,7 +23,7 @@ export default function DirectorPage() {
                 <div className="md:col-span-1">
                   <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
                     <Image
-                      src="/director RSK top school in dehri rohtas.jpg"
+                      src="/directorsir.jpg"
                       alt="Shri Anand Singh - Director of RSK Public School"
                       fill
                       className="object-cover"

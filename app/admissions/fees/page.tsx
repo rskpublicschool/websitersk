@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 
 export default function FeeStructurePage() {
   const feeStructure = [
-    { class: "Play to Nursery", monthlyFee: 1080 },
-    { class: "L.K.G. to U.K.G.", monthlyFee: 1180 },
-    { class: "Std-I to Std-II", monthlyFee: 1280 },
-    { class: "Std-III to Std-IV", monthlyFee: 1480 },
-    { class: "Std-V to Std-VI", monthlyFee: 1580 },
-    { class: "Std-VII to Std-VIII", monthlyFee: 1780 },
-    { class: "Std-IX", monthlyFee: 2180 },
-    { class: "Std-X", monthlyFee: 2180 },
-    { class: "Std-XI", monthlyFee: 2580 },
-    { class: "Std-XII", monthlyFee: 2580 }
+    { class: "Play to Nursery", monthlyFee: 1080, totalFee: 9630 },
+    { class: "L.K.G. to U.K.G.", monthlyFee: 1180, totalFee: 9730 },
+    { class: "Std-I to Std-II", monthlyFee: 1480, totalFee: 10440 },
+    { class: "Std-III to Std-IV", monthlyFee: 1680, totalFee: 10740 },
+    { class: "Std-V to Std-VI", monthlyFee: 1880, totalFee: 15040 },
+    { class: "Std-VII to Std-VIII", monthlyFee: 2080, totalFee: 15350 },
+    { class: "Std-IX", monthlyFee: 2380, totalFee: 15950 },
+    { class: "Std-X", monthlyFee: 2380, totalFee: 6450 },
+    { class: "Std-XI", monthlyFee: 2580, totalFee: 19580 },
+    { class: "Std-XII", monthlyFee: 2580, totalFee: 6580 }
   ];
 
   const additionalFees = [
@@ -111,7 +111,8 @@ export default function FeeStructurePage() {
                   <thead>
                     <tr className="bg-blue-50/80 border-b-2 border-blue-200">
                       <th className="text-left py-4 px-6 font-bold text-slate-800 text-base">Classes / Standard</th>
-                      <th className="text-right py-4 px-6 font-bold text-emerald-700 text-base">Monthly Tuition Fee</th>
+                      <th className="text-right py-4 px-6 font-bold text-emerald-700 text-base">Monthly Fee</th>
+                      <th className="text-right py-4 px-6 font-bold text-blue-900 text-base">Fee During Admission</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -119,6 +120,7 @@ export default function FeeStructurePage() {
                       <tr key={index} className={`border-b border-gray-100 hover:bg-blue-50/50 transition-colors ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
                         <td className="py-4 px-6 font-semibold text-gray-900">{fee.class}</td>
                         <td className="py-4 px-6 text-right font-extrabold text-emerald-600 text-lg">₹{fee.monthlyFee.toLocaleString('en-IN')}/month</td>
+                        <td className="py-4 px-6 text-right font-extrabold text-blue-900 text-lg">₹{fee.totalFee.toLocaleString('en-IN')}</td>
                       </tr>
                     ))}
                   </tbody>

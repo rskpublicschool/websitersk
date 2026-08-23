@@ -12,17 +12,17 @@ export default function InfrastructurePage() {
   // Function to get appropriate image for each infrastructure detail
   const getInfrastructureImage = (label: string) => {
     const imageMap: { [key: string]: string } = {
-      "Total Campus Area": "/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg",
-      "Number of Classrooms": "/experienceimages/cbse school in dehri on sone RSK public school dehri on sone classroom.jpeg",
-      "Science Laboratories": "/schoolimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg",
-      "Computer Labs": "/schoolimages/computer lab rsk public school dehri on sone cbse school in dehri on sone.webp",
-      "Library": "/schoolimages/library rsk public school dehri on sone best cbse school in dehri on sone.jpg",
+      "Total Campus Area": "/corousalimages/Rsk public school dehri model image.webp",
+      "Number of Classrooms": "/latestimages/classroom1.jpeg",
+      "Science Laboratories": "/latestimages/physicslab1.jpeg",
+      "Computer Labs": "/latestimages/computerlab1.jpeg",
+      "Library": "/experienceimages/library rsk public school dehri on sone best cbse school in dehri on sone.jpg",
       "Playground": "/experienceimages/cbse school in dehri on sone RSK public school playgroud.jpeg",
-      "Smart Classroom": "/schoolimages/smart classroom rsk public school dehri on sone best cbse school in dehri on sone.jpeg",
+      "Smart Classroom": "/latestimages/classroom2.jpeg",
       "Girls' Toilets": "/schoolimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg",
       "Boys' Toilets": "/schoolimages/school premises rsk public school dehri on sone best cbse school in dehri on sone.jpg"
     };
-    return imageMap[label] || "/Rsk public school dehri model image.webp";
+    return imageMap[label] || "/corousalimages/Rsk public school dehri model image.webp";
   };
 
   return (
@@ -52,7 +52,7 @@ export default function InfrastructurePage() {
             <CardBody>
               <div className="w-full h-64 sm:h-80 rounded-lg overflow-hidden bg-slate-950 flex items-center justify-center p-2">
                 <img 
-                  src="/Rsk public school dehri model image.webp" 
+                  src="/corousalimages/Rsk public school dehri model image.webp" 
                   alt="RSK Public School Beautiful Campus - 2 Acres Campus Area"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -106,10 +106,14 @@ export default function InfrastructurePage() {
                 <div className="mb-6">
                   <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
-                      src="/schoolimages/smart classroom rsk public school dehri on sone best cbse school in dehri on sone.jpeg" 
+                      src="/latestimages/classroom2.jpeg" 
                       alt="RSK Public School Smart Classroom with modern facilities"
                       className="w-full h-full object-contain rounded-lg"
                     />
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 mt-2">
+                    <img src="/latestimages/classroom1.jpeg" alt="Classroom 1" className="h-20 w-full object-cover rounded-md" />
+                    <img src="/latestimages/classroom3.jpeg" alt="Classroom 3" className="h-20 w-full object-cover rounded-md" />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -123,7 +127,7 @@ export default function InfrastructurePage() {
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Smart interactive boards</span>
+                    <span>Smart interactive boards & digital displays</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -141,7 +145,7 @@ export default function InfrastructurePage() {
               </CardBody>
             </Card>
 
-            {/* Science Labs */}
+            {/* Science Labs (Physics, Chemistry & Biology) */}
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-3">
@@ -150,18 +154,22 @@ export default function InfrastructurePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">Science Laboratories</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Physics, Chemistry & Biology Labs</h3>
                 </div>
               </CardHeader>
               <CardBody>
-                {/* Image for Science Laboratory */}
+                {/* Images for Science Laboratories */}
                 <div className="mb-6">
                   <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
-                      src="/schoolimages/science lab rsk public school dehri on sone best cbse school in dehri on sone.jpg" 
-                      alt="RSK Public School Science Laboratory with modern equipment"
+                      src="/latestimages/chemistrylab1.jpeg" 
+                      alt="RSK Public School Chemistry Laboratory with modern equipment"
                       className="w-full h-full object-contain rounded-lg"
                     />
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 mt-2">
+                    <img src="/latestimages/physicslab1.jpeg" alt="Physics Lab" className="h-20 w-full object-cover rounded-md" />
+                    <img src="/latestimages/biolab1.jpeg" alt="Biology Lab" className="h-20 w-full object-cover rounded-md" />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -169,25 +177,25 @@ export default function InfrastructurePage() {
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Multi-purpose science lab for Physics, Chemistry & Biology</span>
+                    <span>Dedicated Physics, Chemistry & Biology laboratories</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Modern equipment and apparatus</span>
+                    <span>Modern scientific apparatus, chemicals & safety equipment</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Safety equipment and protocols</span>
+                    <span>Strict safety protocols with expert lab assistants</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span>Hands-on practical learning</span>
+                    <span>Hands-on practical experiments for every grade</span>
                   </li>
                 </ul>
               </CardBody>
@@ -210,10 +218,13 @@ export default function InfrastructurePage() {
                 <div className="mb-6">
                   <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
                     <img 
-                      src="/schoolimages/computer lab rsk public school dehri on sone cbse school in dehri on sone.webp" 
+                      src="/latestimages/computerlab1.jpeg" 
                       alt="RSK Public School Computer Laboratory with modern computers"
                       className="w-full h-full object-contain rounded-lg"
                     />
+                  </div>
+                  <div className="mt-2">
+                    <img src="/latestimages/computerlab2.jpeg" alt="Computer Lab Workstations" className="h-20 w-full object-cover rounded-md" />
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-700">
@@ -240,6 +251,58 @@ export default function InfrastructurePage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <span>Trained IT instructors</span>
+                  </li>
+                </ul>
+              </CardBody>
+            </Card>
+
+            {/* Junior & Play School Wing */}
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Junior & Play School Wing</h3>
+                </div>
+              </CardHeader>
+              <CardBody>
+                {/* Image for Play School */}
+                <div className="mb-6">
+                  <div className="w-full h-52 rounded-lg overflow-hidden bg-slate-900 flex items-center justify-center p-1">
+                    <img 
+                      src="/latestimages/playschoolclassroom.jpeg" 
+                      alt="RSK Public School Play School & Junior Classrooms"
+                      className="w-full h-full object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Colorful and child-friendly learning environment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Activity-based play materials & educational toys</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Trained early childhood educators</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Safe and cushioned flooring</span>
                   </li>
                 </ul>
               </CardBody>
