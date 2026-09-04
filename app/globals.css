@@ -59,6 +59,12 @@ body {
   line-height: 1.6;
 }
 
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  color: #0f1729;
+}
+
 /* ─── Typography ─────────────────────────────────────────── */
 .font-display {
   font-family: 'Playfair Display', Georgia, serif;

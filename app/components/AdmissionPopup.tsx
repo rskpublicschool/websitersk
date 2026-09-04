@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 
+const APPS_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbyE-tLhZAjWSY0aCKkbMp7fTxD4ffPSUGBAi8_6ksRDDjXdKoAj3QI-zE3TtZlsPM2D/exec';
+
 export default function AdmissionPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState('');
@@ -43,7 +46,7 @@ export default function AdmissionPopup() {
     sessionStorage.setItem('rsk_landing_popup_dismissed', 'true');
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) {
       setErrorMessage('Please enter your name.');
@@ -58,11 +61,28 @@ export default function AdmissionPopup() {
     setErrorMessage('');
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    try {
+      const formData = new FormData();
+      formData.append('name', name.trim());
+      formData.append('email', '');
+      formData.append('phone', cleanPhone);
+      formData.append('subject', 'Admission Popup Inquiry');
+      formData.append('message', 'Submitted from Website Admission Open Popup');
+
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData,
+      });
+
       setIsSubmitting(false);
       setSubmitted(true);
       sessionStorage.setItem('rsk_landing_popup_dismissed', 'true');
-    }, 600);
+    } catch (err) {
+      console.error('Admission popup form submission error:', err);
+      setIsSubmitting(false);
+      setErrorMessage('Something went wrong. Please try again or reach out on WhatsApp.');
+    }
   };
 
   const handleWhatsAppRedirect = () => {

@@ -40,7 +40,7 @@ export default function ApplyPage() {
     }
   };
 
-  const inputClass = "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none";
+  const inputClass = "w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none placeholder:text-gray-400";
 
   return (
     <div className="min-h-screen bg-gray-50 py-16">
