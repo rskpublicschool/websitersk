@@ -73,10 +73,10 @@ export const mandatoryDocuments: DocumentItem[] = [
   // Academic Certificates
   {
     id: "1",
-    title: "Extension of Affiliation Up to 2031",
+    title: "School Affiliation Certificate 2026",
     category: "Academic Certificates",
-    fileUrl: "/mandatorydisclosures/EXTENSION OF AFFILIATION UP TO 2031.pdf",
-    updatedAt: "2026-08-17"
+    fileUrl: "/certificates/School_Affiliation_certificate_2026.pdf",
+    updatedAt: "2026-09-07"
   },
   {
     id: "2",
@@ -104,13 +104,6 @@ export const mandatoryDocuments: DocumentItem[] = [
     title: "Annual Academic Calendar 2026-27",
     category: "Academic Certificates",
     fileUrl: "/mandatorydisclosures/ANNUAL ACADEMIC CALENDER 2026-27.pdf",
-    updatedAt: "2026-05-19"
-  },
-  {
-    id: "27",
-    title: "CBSE Mandatory Disclosure (Official)",
-    category: "Academic Certificates",
-    fileUrl: "/mandatorydisclosures/CBSE Mandatory disclosure official.pdf",
     updatedAt: "2026-05-19"
   },
 
@@ -276,6 +269,15 @@ export const mandatoryDocuments: DocumentItem[] = [
     category: "Governance & Compliance",
     fileUrl: "/certificates/IC recommendation RSK public school top 10 school in dehri.pdf",
     updatedAt: "2026-02-14"
+  },
+
+  // Mandatory Disclosure
+  {
+    id: "27",
+    title: "Mandatory Disclosure Certificate 2026",
+    category: "Governance & Compliance",
+    fileUrl: "/certificates/Mandatory_Disclosure_Certificate_2026.pdf",
+    updatedAt: "2026-09-07"
   }
 ];
 
@@ -285,4 +287,3 @@ export const quickLinks = [
   { label: "Fee Payment", url: "/admissions/fees" },
   { label: "Notice Board", url: "/notice-board" }
 ];
-
