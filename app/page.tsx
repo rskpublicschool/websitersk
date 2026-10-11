@@ -402,8 +402,8 @@ export default function HomePage() {
             <FramedPhoto tag="Board Result 2026" className="max-w-4xl w-full">
               <div className="relative w-full aspect-[16/10]">
                 <Image
-                  src="/achievements/schooltoppers_and_achievers_image_with_principal_group_rsk_public_school_bastipur_dehri.jpeg"
-                  alt="CBSE Board toppers and achievers with principal at RSK Public School celebration"
+                  src="/achievements/RSK Public School Board Achievers Celebration.png"
+                  alt="RSK Public School CBSE Board Achievers Celebration with faculty and toppers"
                   fill
                   sizes="(max-width: 1024px) 100vw, 900px"
                   className="object-cover"
@@ -449,6 +449,292 @@ export default function HomePage() {
               </svg>
               Apply for Admission
             </Link>
+          </div>
+        </div>
+      </section>
+      {/* ─────────────────────────────────────────────────────────────
+          OUR SPORTS AND GAMES EXCELLENCE — District Sports Championship
+      ───────────────────────────────────────────────────────────── */}
+      <section className="relative py-16 sm:py-20 lg:py-24" style={{ background: theme.paperAlt }}>
+        <div
+          className="absolute inset-0 opacity-[0.04] pointer-events-none"
+          style={{
+            backgroundImage: `linear-gradient(${theme.brassLight} 1px, transparent 1px), linear-gradient(90deg, ${theme.brassLight} 1px, transparent 1px)`,
+            backgroundSize: '48px 48px',
+          }}
+        />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 sm:mb-16">
+            <Eyebrow tone="maroon">Athletic Achievements</Eyebrow>
+            <h2 className="rsk-display text-3xl sm:text-4xl lg:text-5xl mb-4" style={{ color: theme.ink }}>
+              Our Sports and Games Excellence
+            </h2>
+            <p className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: theme.inkMuted }}>
+              Empowering students through discipline, teamwork, and athletic passion. Our students brought immense pride
+              to RSK Public School with remarkable victories at the District Level School Sports Championship 2026–27
+              (जिला स्तरीय विद्यालय खेल प्रतियोगिता) organized by the Bihar State Sports Authority.
+            </p>
+          </div>
+
+          {/* Marquee Featured Champions: 2 Columns */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-10">
+            {/* Card 1: District Sports Championship Group */}
+            <div
+              className="rsk-ledger-card bg-white p-4 sm:p-5 flex flex-col justify-between"
+              style={{
+                border: `1px solid ${theme.line}`,
+                borderTop: `3px solid ${theme.maroon}`,
+                boxShadow: '0 18px 40px -20px rgba(20,40,34,0.18)',
+              }}
+            >
+              <div>
+                <FramedPhoto tag="District Champions 2026–27" className="w-full">
+                  <div className="relative w-full aspect-[16/10] bg-[#1a2e26]">
+                    <Image
+                      src="/districtsportschampioship/RSK public school winners district level sports championship..jpeg"
+                      alt="RSK Public School winners and medalists at the District Level Sports Championship"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 600px"
+                      className="object-cover"
+                    />
+                  </div>
+                </FramedPhoto>
+                <div className="pt-5 px-2">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span
+                      className="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5"
+                      style={{ background: theme.maroonLight, color: theme.maroon }}
+                    >
+                      Bihar State Sports Authority
+                    </span>
+                    <span className="text-xs" style={{ color: theme.inkMuted }}>
+                      Rohtas District
+                    </span>
+                  </div>
+                  <h3 className="rsk-display text-xl sm:text-2xl font-bold mb-2" style={{ color: theme.ink }}>
+                    District Level School Sports Championship
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: theme.inkMuted }}>
+                    RSK Public School contingent celebrating triumphant success at the District Level Sports Championship banner.
+                    Our students represented the school with immense passion, claiming medals across diverse sports disciplines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2: Felicitation with Director & Faculty */}
+            <div
+              className="rsk-ledger-card bg-white p-4 sm:p-5 flex flex-col justify-between"
+              style={{
+                border: `1px solid ${theme.line}`,
+                borderTop: `3px solid ${theme.brass}`,
+                boxShadow: '0 18px 40px -20px rgba(20,40,34,0.18)',
+              }}
+            >
+              <div>
+                <FramedPhoto tag="Felicitation Ceremony" className="w-full">
+                  <div className="relative w-full aspect-[16/10] bg-[#1a2e26]">
+                    <Image
+                      src="/districtsportschampioship/All winners of district sports champioship  with director.jpeg"
+                      alt="RSK Public School winners of district sports championship felicitated by Director and management"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 600px"
+                      className="object-cover"
+                    />
+                  </div>
+                </FramedPhoto>
+                <div className="pt-5 px-2">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span
+                      className="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5"
+                      style={{ background: '#f8f4e6', color: theme.brassDeep }}
+                    >
+                      Leadership Honour
+                    </span>
+                    <span className="text-xs" style={{ color: theme.inkMuted }}>
+                      RSK Campus
+                    </span>
+                  </div>
+                  <h3 className="rsk-display text-xl sm:text-2xl font-bold mb-2" style={{ color: theme.ink }}>
+                    Honouring Our Sports Achievers
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: theme.inkMuted }}>
+                    Hon’ble Director sir and esteemed teachers felicitating our medal winners with ceremonial sashes and
+                    floral garlands, commending their relentless dedication, discipline, and sporting excellence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sports Disciplines: 3-column Grid for Karate, Kabaddi, Chess */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+            {/* Karate */}
+            <div
+              className="rsk-ledger-card bg-white p-4 flex flex-col justify-between"
+              style={{
+                border: `1px solid ${theme.line}`,
+                borderTop: `3px solid ${theme.maroon}`,
+              }}
+            >
+              <div>
+                <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden border" style={{ borderColor: theme.line }}>
+                  <Image
+                    src="/districtsportschampioship/rsk students playing karate district sports champioship.jpeg"
+                    alt="RSK Public School students competing in Karate at District Sports Championship"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 380px"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                  <span
+                    className="absolute top-2 left-2 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-sm"
+                    style={{ background: theme.maroon, color: '#ffffff' }}
+                  >
+                    Martial Arts &amp; Karate
+                  </span>
+                </div>
+                <h4 className="rsk-display text-lg font-bold mb-1.5" style={{ color: theme.ink }}>
+                  Karate &amp; Self-Defense
+                </h4>
+                <p className="text-xs leading-relaxed" style={{ color: theme.inkMuted }}>
+                  Exceptional agility, defensive technique, and focus demonstrated during district championship bouts, clinching medals for RSK.
+                </p>
+              </div>
+              <div className="pt-3 mt-3 border-t flex items-center justify-between text-[11px]" style={{ borderColor: theme.line }}>
+                <span className="font-semibold" style={{ color: theme.maroon }}>Gold &amp; Silver Medals</span>
+                <span style={{ color: theme.inkMuted }}>District Level</span>
+              </div>
+            </div>
+
+            {/* Kabaddi */}
+            <div
+              className="rsk-ledger-card bg-white p-4 flex flex-col justify-between"
+              style={{
+                border: `1px solid ${theme.line}`,
+                borderTop: `3px solid ${theme.brass}`,
+              }}
+            >
+              <div>
+                <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden border" style={{ borderColor: theme.line }}>
+                  <Image
+                    src="/districtsportschampioship/rsk students playing kabaddy district sports champioship.jpeg"
+                    alt="RSK Public School kabaddi team in intense district sports championship tournament"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 380px"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                  <span
+                    className="absolute top-2 left-2 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-sm"
+                    style={{ background: theme.brass, color: theme.ink }}
+                  >
+                    Kabaddi Tournament
+                  </span>
+                </div>
+                <h4 className="rsk-display text-lg font-bold mb-1.5" style={{ color: theme.ink }}>
+                  Kabaddi &amp; Team Spirit
+                </h4>
+                <p className="text-xs leading-relaxed" style={{ color: theme.inkMuted }}>
+                  High-energy teamwork, raiding skills, and defensive blocks as our athletes battled through competitive matches on the field.
+                </p>
+              </div>
+              <div className="pt-3 mt-3 border-t flex items-center justify-between text-[11px]" style={{ borderColor: theme.line }}>
+                <span className="font-semibold" style={{ color: theme.brassDeep }}>Top Tournament Finish</span>
+                <span style={{ color: theme.inkMuted }}>District Field</span>
+              </div>
+            </div>
+
+            {/* Chess */}
+            <div
+              className="rsk-ledger-card bg-white p-4 flex flex-col justify-between"
+              style={{
+                border: `1px solid ${theme.line}`,
+                borderTop: `3px solid ${theme.sage}`,
+              }}
+            >
+              <div>
+                <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden border" style={{ borderColor: theme.line }}>
+                  <Image
+                    src="/districtsportschampioship/rsk student playing chess at district sports champioship.jpeg"
+                    alt="RSK Public School student participating in Rohtas District Chess Championship"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 380px"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                  <span
+                    className="absolute top-2 left-2 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-sm"
+                    style={{ background: theme.sage, color: '#ffffff' }}
+                  >
+                    Mind Sports &amp; Chess
+                  </span>
+                </div>
+                <h4 className="rsk-display text-lg font-bold mb-1.5" style={{ color: theme.ink }}>
+                  Rohtas District Chess
+                </h4>
+                <p className="text-xs leading-relaxed" style={{ color: theme.inkMuted }}>
+                  Sharp intellect, strategic vision, and calm composure at the Rohtas District Chess Training Centre in Sasaram.
+                </p>
+              </div>
+              <div className="pt-3 mt-3 border-t flex items-center justify-between text-[11px]" style={{ borderColor: theme.line }}>
+                <span className="font-semibold" style={{ color: theme.sage }}>Strategic Excellence</span>
+                <span style={{ color: theme.inkMuted }}>District Center</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Sports Values & Key Metrics Banner */}
+          <div
+            className="max-w-6xl mx-auto p-6 sm:p-8 bg-white"
+            style={{
+              border: `1px solid ${theme.line}`,
+              borderLeft: `4px solid ${theme.brass}`,
+            }}
+          >
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+              <div>
+                <div className="rsk-display text-2xl sm:text-3xl font-bold" style={{ color: theme.ink }}>
+                  100%
+                </div>
+                <div className="text-xs font-semibold uppercase tracking-wider mt-1" style={{ color: theme.brass }}>
+                  Active Participation
+                </div>
+                <div className="text-[11px] mt-0.5" style={{ color: theme.inkMuted }}>
+                  Holistic student athletic culture
+                </div>
+              </div>
+              <div>
+                <div className="rsk-display text-2xl sm:text-3xl font-bold" style={{ color: theme.ink }}>
+                  District
+                </div>
+                <div className="text-xs font-semibold uppercase tracking-wider mt-1" style={{ color: theme.maroon }}>
+                  Championship Level
+                </div>
+                <div className="text-[11px] mt-0.5" style={{ color: theme.inkMuted }}>
+                  Bihar State Sports Authority
+                </div>
+              </div>
+              <div>
+                <div className="rsk-display text-2xl sm:text-3xl font-bold" style={{ color: theme.ink }}>
+                  Multi-Sport
+                </div>
+                <div className="text-xs font-semibold uppercase tracking-wider mt-1" style={{ color: theme.sage }}>
+                  Indoor &amp; Outdoor
+                </div>
+                <div className="text-[11px] mt-0.5" style={{ color: theme.inkMuted }}>
+                  Karate, Kabaddi, Chess &amp; Athletics
+                </div>
+              </div>
+              <div>
+                <div className="rsk-display text-2xl sm:text-3xl font-bold" style={{ color: theme.ink }}>
+                  Expert
+                </div>
+                <div className="text-xs font-semibold uppercase tracking-wider mt-1" style={{ color: theme.brassDeep }}>
+                  Physical Mentors
+                </div>
+                <div className="text-[11px] mt-0.5" style={{ color: theme.inkMuted }}>
+                  Dedicated fitness &amp; safety drills
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
